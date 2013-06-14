@@ -1,0 +1,28 @@
+div#NavigationSideBar {
+	margin-bottom: 20px;
+}
+
+div#NavigationSideBar .nav {
+	list-style: none;
+	margin-left: 0;
+}
+
+div#NavigationSideBar .nav-list {
+	padding: 0 15px;
+}
+
+div#NavigationSideBar a {
+	text-decoration:none;
+}
+
+div#NavigationSideBar .open > a {
+	color: #0088CC;
+}
+
+div#NavigationSideBar > .active {
+	background: #0088CC;
+}
+
+div#NavigationSideBar .active > a {
+	color: #fff;
+} 

@@ -1,0 +1,25 @@
+﻿@inherits RazorPageTemplate
+
+@functions {
+	public override void Configure()
+	{
+		TemplateId = new Guid("7d422b58-ce67-4a30-a2ed-61529eccd411");
+		TemplateTitle = "Home";
+	    Layout = "InteriorMaster.cshtml";
+    }
+	
+	 
+
+	[Placeholder(Id = "content", Title="Content", IsDefault = true)]
+    public XhtmlDocument Content { get; set; } 
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		@*you can add template specific head elements here*@
+	</head>
+	<body>
+		 
+				@Html.Raw(Content)
+			 
+	</body>
+</html>

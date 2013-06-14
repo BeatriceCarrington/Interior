@@ -1,0 +1,145 @@
+
+/*menu*/
+.navbar
+{
+    margin-left: 64px;
+}
+
+.navbar-inner
+{
+    margin-top: 14px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-family: 'CaviarDreams';
+    font-weight: bold;
+}
+
+    .navbar-inner ul li
+    {
+        border-left: dotted 1px #000;
+        background: none;
+        height: 80px;
+        line-height: 70px;
+        width: 110px;
+        font-size: 15px;
+        text-align: center;
+    }
+/*.navbar-inner ul li a:hover
+                {
+                    color:green!important;
+                }*/
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus
+{
+    background: none!important;
+    box-shadow: none!important;
+    color: #89b33a!important;
+}
+
+.navbar .nav > li > a:hover
+{
+    color: #89b33a!important;
+}
+
+.slider-content
+{
+    padding: 20px 0 0 0;
+}
+
+/*gallery*/
+.carousel-caption
+{
+    position:relative;
+    background: none;
+    padding: 20px;
+}
+
+.slider-title
+{
+    font-size: 18px;
+    color: #84bf12;
+    font-family: 'CaviarDreams';
+}
+
+.slider-info
+{
+    padding: 20px 0px;
+}
+
+.slider-indicator
+{
+    margin-left: 17px;
+}
+
+ 
+
+.carousel-indicators
+{
+    height: 40px;
+    position: inherit;
+}
+
+    .carousel-indicators li
+    {
+        height: 20px;
+        width: 20px;
+        border-radius: 0px;
+        background-color: #999999;
+    }
+
+    .carousel-indicators .active
+    {
+        background-color: #84bf12;
+    }
+/*news*/
+.news
+{
+}
+
+.news-title
+{
+    background: url(images/header.jpg) no-repeat left center;
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    font-family: 'CaviarDreamsBold';
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+    .news-title a
+    {
+        color: #fff;
+    }
+
+.news-caption
+{
+    padding: 15px 35px 15px 0px;
+}
+
+.caption a
+{
+    /*color: #839f4a;*/
+}
+
+.catalog .cimage
+{
+   background: url("images/image-border.jpg") no-repeat scroll 0 156px transparent;
+    height: 184px;
+    padding-top: 6px;
+    text-align: center;
+    width: 260px;
+}
+
+.catalog-title
+{
+    font-family: 'CaviarDreams';
+    color: #606060;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.read-more
+{
+    color:#577d0a;
+    font-size:16px;
+}

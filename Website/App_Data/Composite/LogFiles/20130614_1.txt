@@ -1,0 +1,113 @@
+﻿20130614 10:21:06.5535 5  1 Error FileBasedFunctionProvider  Error instantiating NewsList function
+20130614 10:21:06.6055 5  1 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml(23): error CS0103: The name 'Resources' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130614 10:28:28.1908 5 69 Critical WorkflowFacade  System.IO.IOException: The process cannot access the file 'E:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at Composite.Plugins.Elements.ElementProviders.RazorFunctionProviderElementProvider.EditRazorFunctionWorkflow.saveCodeActivity_ExecuteCode(Object sender, EventArgs e)
+   at System.Workflow.ComponentModel.Activity.RaiseEvent(DependencyProperty dependencyEvent, Object sender, EventArgs e)
+   at System.Workflow.Activities.CodeActivity.Execute(ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutor`1.Execute(T activity, ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutorOperation.Run(IWorkflowCoreRuntime workflowCoreRuntime)
+   at System.Workflow.Runtime.Scheduler.Run()
+
+20130614 10:28:28.2888 5 69 Critical Web Application Error, Exception  System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.IOException: The process cannot access the file 'E:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml' because it is being used by another process.
+   at Composite.C1Console.Workflow.WorkflowFacadeImpl.RunWorkflow(Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFlowController.OnSave(FlowToken flowToken, Dictionary`2 bindings, FlowControllerServicesContainer serviceContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.BaseEventHandler(String consoleId, String elementProviderName, FlowToken flowToken, FormFlowUiDefinition formFlowUiCommand, FlowControllerServicesContainer servicesContainer, Dictionary`2 eventHandlers, IFormEventIdentifier localScopeEventIdentifier, FlowControllerServicesContainer formServicesContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.<>c__DisplayClass3.<Render>b__0(Object sender, EventArgs e)
+   at Composite_Forms_DocumentExecutionContainer.OnMessage()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+20130614 10:28:28.2888 5 69 Critical Web Application Error, Exception | INNER  System.IO.IOException: The process cannot access the file 'E:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml' because it is being used by another process.
+   at Composite.C1Console.Workflow.WorkflowFacadeImpl.RunWorkflow(Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFlowController.OnSave(FlowToken flowToken, Dictionary`2 bindings, FlowControllerServicesContainer serviceContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.BaseEventHandler(String consoleId, String elementProviderName, FlowToken flowToken, FormFlowUiDefinition formFlowUiCommand, FlowControllerServicesContainer servicesContainer, Dictionary`2 eventHandlers, IFormEventIdentifier localScopeEventIdentifier, FlowControllerServicesContainer formServicesContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.<>c__DisplayClass3.<Render>b__0(Object sender, EventArgs e)
+   at Composite_Forms_DocumentExecutionContainer.OnMessage()
+
+20130614 10:28:28.2928 5 62 Error FileBasedFunctionProvider  Error instantiating NewsList function
+20130614 10:28:28.2938 5 62 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml(23): error CS0103: The name 'Resources' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130614 10:28:28.3038 5 63 Error FileBasedFunctionProvider  Error instantiating NewsList function
+20130614 10:28:28.3638 5 63 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml(23): error CS0103: The name 'Resources' does not exist in the current context
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130614 10:31:28.1201 5 57 Critical WorkflowFacade  System.IO.IOException: The process cannot access the file 'E:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   at Composite.Plugins.Elements.ElementProviders.RazorFunctionProviderElementProvider.EditRazorFunctionWorkflow.saveCodeActivity_ExecuteCode(Object sender, EventArgs e)
+   at System.Workflow.ComponentModel.Activity.RaiseEvent(DependencyProperty dependencyEvent, Object sender, EventArgs e)
+   at System.Workflow.Activities.CodeActivity.Execute(ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutor`1.Execute(T activity, ActivityExecutionContext executionContext)
+   at System.Workflow.ComponentModel.ActivityExecutorOperation.Run(IWorkflowCoreRuntime workflowCoreRuntime)
+   at System.Workflow.Runtime.Scheduler.Run()
+
+20130614 10:31:28.1251 5 57 Critical Web Application Error, Exception  System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.IOException: The process cannot access the file 'E:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml' because it is being used by another process.
+   at Composite.C1Console.Workflow.WorkflowFacadeImpl.RunWorkflow(Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFlowController.OnSave(FlowToken flowToken, Dictionary`2 bindings, FlowControllerServicesContainer serviceContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.BaseEventHandler(String consoleId, String elementProviderName, FlowToken flowToken, FormFlowUiDefinition formFlowUiCommand, FlowControllerServicesContainer servicesContainer, Dictionary`2 eventHandlers, IFormEventIdentifier localScopeEventIdentifier, FlowControllerServicesContainer formServicesContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.<>c__DisplayClass3.<Render>b__0(Object sender, EventArgs e)
+   at Composite_Forms_DocumentExecutionContainer.OnMessage()
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+20130614 10:31:28.1251 5 57 Critical Web Application Error, Exception | INNER  System.IO.IOException: The process cannot access the file 'E:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml' because it is being used by another process.
+   at Composite.C1Console.Workflow.WorkflowFacadeImpl.RunWorkflow(Guid instanceId)
+   at Composite.C1Console.Workflow.WorkflowFlowController.OnSave(FlowToken flowToken, Dictionary`2 bindings, FlowControllerServicesContainer serviceContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.BaseEventHandler(String consoleId, String elementProviderName, FlowToken flowToken, FormFlowUiDefinition formFlowUiCommand, FlowControllerServicesContainer servicesContainer, Dictionary`2 eventHandlers, IFormEventIdentifier localScopeEventIdentifier, FlowControllerServicesContainer formServicesContainer)
+   at Composite.Core.WebClient.FlowMediators.FormFlowRendering.FormFlowUiDefinitionRenderer.<>c__DisplayClass3.<Render>b__0(Object sender, EventArgs e)
+   at Composite_Forms_DocumentExecutionContainer.OnMessage()
+
+20130614 10:31:28.6531 5 64 Error FileBasedFunctionProvider  Error instantiating NewsList function
+20130614 10:31:28.6541 5 64 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\My\Content\NewsList.cshtml(23): error CS0103: The name 'Resources' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilatio

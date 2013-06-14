@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GalleryElements>
+  <Gallery Id="a0a11a6a-3f9d-4f5c-a3a9-d070cbb1a138" Title="The living room" Desc="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#x9;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/body&gt;&#xA;&lt;/html&gt;" Image="MediaArchive:26d3bbae-cebc-4929-a8e2-1cdf63272e67" />
+  <Gallery Id="d65c2213-12a7-48f2-b6ae-0c5db4da0823" Title="Living room2" Desc="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#x9;Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" Image="MediaArchive:f5585155-7995-43f3-bf13-87033f326349" />
+</GalleryElements>

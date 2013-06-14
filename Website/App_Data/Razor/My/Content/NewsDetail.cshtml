@@ -1,0 +1,38 @@
+@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get  { return "Show news detail"; }
+    }
+
+    
+
+}
+@{
+    Composite.Core.Routing.Pages.C1PageRoute.RegisterPathInfoUsage();
+    string pubDate = My.Utils.PathInfoString(0);
+    string Title = My.Utils.PathInfoString(1);
+    DateTime PublishDate = new DateTime();
+    My.Content.News detail = null;
+    if (!string.IsNullOrEmpty(pubDate) && !string.IsNullOrEmpty(Title))
+    {
+        PublishDate = DateTime.Parse(My.Utils.PathInfoString(0));
+        detail = Data.Get<My.Content.News>().Where(t => t.PublishDate == PublishDate && My.Utils.convertToUrl(t.Title) == Title).FirstOrDefault();       
+    }
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>@detail.Title</title>
+    </head>
+    <body>
+        
+        @if (detail != null)
+        {
+            <h2 style="font-size:14px;">@detail.Title</h2>
+            <i>@detail.PublishDate.ToString("dd/MM/yyyy")</i>
+            <br /><br />
+            <div>@Html.Raw(detail.Content)</div>    
+        }
+    </body>
+</html>

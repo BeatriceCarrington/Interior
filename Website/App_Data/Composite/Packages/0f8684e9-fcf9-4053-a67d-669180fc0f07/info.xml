@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageInfo name="Composite.StarterSite.Bootstrap.Core" groupName="Composite.StarterSite.Bootstrap" version="1.0.4" author="Composite A/S" website="http://composite.net" description="--" installDate="2013-06-13T11:18:11.0900419+07:00" installedBy="admin" isLocalInstalled="true" canBeUninstalled="false" flushOnCompletion="false" reloadConsoleOnCompletion="false" systemLocking="none" xmlns="http://www.composite.net/ns/management/packageinstaller/1.0" />

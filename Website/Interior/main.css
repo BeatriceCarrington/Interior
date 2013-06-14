@@ -1,0 +1,164 @@
+@font-face
+{
+    font-family: CaviarDreams;
+    src: url('font/CaviarDreams.ttf'),url('font/CaviarDreams.eot'); /* IE9 */
+}
+
+@font-face
+{
+    font-family: CaviarDreamsBold;
+    src: url('font/Caviar_Dreams_Bold.ttf'),url('font/Caviar_Dreams_Bold.eot'); /* IE9 */
+}
+
+
+
+
+body
+{
+    background-color: #fbfbfb;
+    background: #fbfbfb url(images/bg.png) repeat-x;
+    color: #6b6b6b;
+    font-family: 'Segoe UI';
+}
+
+.container-interior
+{
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+.pane-container
+{
+    padding: 0px 20px;
+}
+
+.pane-container1
+{
+    padding-top: 20px;
+}
+
+.heading1
+{
+    font-size: 22px;
+    font-family: 'CaviarDreams';
+    color: #93c434;
+    padding: 20px 0;
+}
+
+.heading2
+{
+    font-size: 16px;
+    font-family: 'CaviarDreams';
+    color: #93c434;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.view-button
+{
+    font-size: 16px;
+    font-family: 'CaviarDreams';
+    color: #93c434;
+    font-weight: bold;
+}
+/*about us*/
+.about-us-info
+{
+    padding-right: 10px;
+}
+
+.staff-item
+{
+    padding: 15px 0px;
+}
+
+.staf-title
+{
+    font-size: 22px;
+    font-family: 'CaviarDreams';
+    color: #444444;
+    font-weight: bold;
+}
+
+.staff-info
+{
+}
+/*end about us*/
+/*service*/
+.services-info
+{
+    padding: 15px 0px 50px 0;
+}
+/*end service*/
+/*vmenu*/
+.interior-vmenu ul li a
+{
+    background: none;
+    color: #5d5d5d;
+    font-family: 'CaviarDreamsBold';
+    font-size: 14px;
+}
+
+.interior-vmenu ul li
+{
+    border-bottom: dotted 1px #a5a5a5;
+    height: 40px;
+    line-height: 40px;
+}
+
+.interior-vmenu .nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus
+{
+    background: none;
+    text-shadow: none;
+    color: #93c434;
+    text-shadow: none;
+}
+
+.nav > li > a:hover, .nav > li > a:focus
+{
+    background: none!important;
+    text-decoration: none;
+    color: #93c434!important;
+}
+/*end vmenu*/
+
+/*catalogs*/
+.catalog-info
+{
+    padding: 15px 0px 30px 0px;
+}
+/*end catalogs*/
+
+/*client*/
+.other-client
+{
+    padding: 20px 0px;
+}
+
+.other-client-title
+{
+    font-size: 22px;
+    font-family: 'CaviarDreams';
+    color: #444444;
+}
+/*end client*/
+
+.footer
+{
+    padding: 20px 0 30px 0;
+}
+
+.separate
+{
+    border-bottom: dotted 2px #bcbcbc;
+    margin: 20px 0px;
+}
+.full-input
+{
+    width:100%;
+}
+#contact-map
+{
+    width:960px;
+    height:420px;
+}

@@ -1,0 +1,15 @@
+#LanguageSwitcher {
+	list-style: none;
+}
+
+#LanguageSwitcher a {
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+#LanguageSwitcher a img { 
+	border: 0px; 
+	float: left; 
+	margin: 5px;
+}

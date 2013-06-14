@@ -1,0 +1,50 @@
+﻿@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get { return "A demo function that outputs a hello message."; }
+    }
+
+    [FunctionParameter(DefaultValue = "World")]
+    public string Name { get; set; }
+}
+
+@{
+    var pagenodes = Sitemap.CurrentHomePageNode.GetPageNodes(SitemapScope.Level2AndSiblings).ToList();
+    if (!pagenodes.Any()) { return; }
+}
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+
+            <ul class="nav">
+
+                <li class="active">
+                    <a href="@HomePageNode.Url">@HomePageNode.MenuTitle</a>
+                </li>
+
+                @foreach (var page in pagenodes)
+                {
+                    if (!string.IsNullOrEmpty(page.MenuTitle))
+                    {
+                    <li>
+                        <a href="@page.Url">@page.MenuTitle</a>
+                    </li>
+                    }
+                }
+
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
