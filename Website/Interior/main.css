@@ -95,8 +95,9 @@ body
 {
     background: none;
     color: #5d5d5d;
-    font-family: 'CaviarDreamsBold';
+    font-family: 'CaviarDreams';
     font-size: 14px;
+    font-weight:bold;
 }
 
 .interior-vmenu ul li

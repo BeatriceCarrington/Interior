@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website", "{2220ECEF-A952-40FF-9431-0C1E217557D9}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{2220ECEF-A952-40FF-9431-0C1E217557D9}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/Website"
@@ -22,13 +22,22 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website", "{2220
 		VWDVirtualPath = "/"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomWidget", "CustomWidget\CustomWidget.csproj", "{736E291F-820A-4EBF-B078-795C8612EB4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2220ECEF-A952-40FF-9431-0C1E217557D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2220ECEF-A952-40FF-9431-0C1E217557D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2220ECEF-A952-40FF-9431-0C1E217557D9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2220ECEF-A952-40FF-9431-0C1E217557D9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{736E291F-820A-4EBF-B078-795C8612EB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736E291F-820A-4EBF-B078-795C8612EB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736E291F-820A-4EBF-B078-795C8612EB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736E291F-820A-4EBF-B078-795C8612EB4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

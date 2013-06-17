@@ -22,8 +22,11 @@
         <div class="navbar-inner">
 
             <ul class="nav">
-
-                <li class="active">
+                @{  string active = "";
+                    if (CurrentPageNode.Url == @HomePageNode.Url)
+                    { active = "active"; }
+                        }
+                <li class="@active">
                     <a href="@HomePageNode.Url">@HomePageNode.MenuTitle</a>
                 </li>
 
@@ -31,7 +34,10 @@
                 {
                     if (!string.IsNullOrEmpty(page.MenuTitle))
                     {
-                    <li>
+                        active = "";
+                        if (CurrentPageNode.Url == page.Url)
+                        { active = "active"; }
+                    <li class="@active">
                         <a href="@page.Url">@page.MenuTitle</a>
                     </li>
                     }

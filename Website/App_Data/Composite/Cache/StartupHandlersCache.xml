@@ -6,5 +6,10 @@
       <AssemblyName>dotless.Core</AssemblyName>
       <LastModified>2013-06-13T11:18:10.0209808+07:00</LastModified>
     </AssemblyInfo>
+    <AssemblyInfo>
+      <SubscribedTypes />
+      <AssemblyName>CustomWidget</AssemblyName>
+      <LastModified>2013-06-14T14:45:26.8577068+07:00</LastModified>
+    </AssemblyInfo>
   </Assemblies>
 </SubscribedTypesCache>

@@ -81,3 +81,129 @@
    at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
    at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
 20130614 10:21:02.8763 4 21 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 10:21:02:87 in process 8336
+20130614 11:54:18.6013 2 50 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 11:54:18:60 in process 7548
+20130614 13:54:57.1414 2 41 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 13:54:57:14 in process 8944
+20130614 13:55:06.4789 3 50 Warning ConsoleMessageServiceFacade  Console 'key2750138557913907' has a last known change numer of 3, but server current number is 1.
+20130614 13:55:08.8880 3 33 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 13:55:08:88 in process 8944
+20130614 14:02:58.4409 4 68 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, WidgetProvider' 
+20130614 14:14:45.2213 4 65 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 14:14:45:22 in process 8944
+20130614 14:14:48.4565 5 56 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, WidgetProvider' 
+20130614 14:14:48.5055 5 56 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, WidgetProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:14:58.5971 5 57 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 14:14:58:59 in process 8944
+20130614 14:21:38.7660 6 56 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, WidgetProvider' 
+20130614 14:21:38.7830 6 56 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, WidgetProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:21:48.7975 6 12 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 14:21:48:79 in process 8944
+20130614 14:33:07.4004 7 56 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' 
+20130614 14:33:07.4164 7 56 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:33:17.4269 7 81 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 14:33:17:42 in process 8944
+20130614 14:33:55.9451 8 56 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' 
+20130614 14:33:55.9601 8 56 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:34:05.9867 8 86 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 14:34:05:98 in process 8944
+20130614 14:35:08.2563 9 56 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' 
+20130614 14:35:08.2713 9 56 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:35:18.2788 9 66 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 9 ended at 14:35:18:27 in process 8944
+20130614 14:36:32.0291 10 56 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' 
+20130614 14:36:32.0471 10 56 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:36:42.0686 10 81 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 10 ended at 14:36:42:06 in process 8944
+20130614 14:47:25.6134 11 30 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' 
+20130614 14:47:25.6365 11 30 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, SampleProvider' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:47:35.6590 11 27 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 11 ended at 14:47:35:65 in process 8944
+20130614 14:48:07.6079 12 30 Critical Configuration  Could not resolve type 'SampleProvider.MyWidgetFunctionProvider, CustomWidget' 
+20130614 14:48:07.6229 12 30 Critical GlobalInitializerFacade  System.Configuration.ConfigurationErrorsException: Type 'SampleProvider.MyWidgetFunctionProvider, CustomWidget' could not be resolved (E:\GitHubApp\Interior\Website\App_Data\Composite\Composite.config line 370)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at Composite.Core.Configuration.FileConfigurationSourceImplementation.GetSection(String sectionName)
+   at Composite.Core.Configuration.FileConfigurationSource.GetSection(String sectionName)
+   at Composite.Functions.Foundation.WidgetFunctionContainer.OnGetProviderNames()
+   at Composite.Functions.Foundation.MetaFunctionContainer.InitializeAllFunctions(FunctionTypesToReturn functionTypesToReturn, Boolean fireUpdateEvents)
+   at Composite.Functions.Foundation.MetaFunctionProviderRegistryImpl.Initialize_PostDataTypes()
+   at Composite.GlobalInitializerFacade.DoInitialize()
+   at Composite.GlobalInitializerFacade.InitializeTheSystem()
+
+20130614 14:48:17.6324 12 41 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 12 ended at 14:48:17:63 in process 8944
+20130614 14:55:42.2149 13 50 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 13 ended at 14:55:42:21 in process 8944
+20130614 15:45:16.1660 14 93 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 14 ended at 15:45:16:16 in process 8944
+20130614 15:48:36.9344 15 93 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 15 ended at 15:48:36:93 in process 8944
+20130614 16:05:10.6823 16 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 16 ended at 16:05:10:68 in process 8944
+20130614 16:05:31.4195 17 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 17 ended at 16:05:31:41 in process 8944
+20130614 16:06:05.7254 18 13 Critical WorkflowFacade  Could not deserialize form data for the workflow 2d34fdec-f734-4cdc-8943-32d172d2ece0
+20130614 16:11:35.0173 18 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 18 ended at 16:11:35:01 in process 8944
+20130614 16:58:08.8841 19 104 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 19 ended at 16:58:08:88 in process 8944
