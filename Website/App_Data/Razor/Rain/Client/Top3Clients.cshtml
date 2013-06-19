@@ -1,0 +1,43 @@
+@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get  { return "A demo function that outputs a hello message."; }
+    }
+     
+    [FunctionParameter(DefaultValue = "World")]
+    public string Name { get; set; }
+    
+      [FunctionParameter(Label = "Detail Page")]
+    public DataReference<IPage> DetailPage { get; set; }
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+    <head>
+    </head>
+    <body>
+         @{
+             
+        var listData = Data.Get<Rain.Clients>().Take(3).ToList();     
+        foreach (var item in listData)
+        {
+              
+              string url = Html.C1().PageUrl(DetailPage.Data).ToString() + "/" + My.Utils.convertToUrl(item.Title);
+            
+                <div class="span4">
+						<div class="catalog">
+							<div class="cimage"><a href="#"><img src="@Html.C1().MediaUrl(item.Image)" /></a></div>
+							<div class="caption">
+								<div class="catalog-title">@item.Title</div>
+								<div><a class="view-button" href="@url">View</a></div>
+							</div>
+						</div>
+				</div>
+        }
+    }
+        
+
+       
+    </body>
+</html>

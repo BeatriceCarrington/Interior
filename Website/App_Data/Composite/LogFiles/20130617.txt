@@ -1,0 +1,401 @@
+﻿20130617 09:19:15.1547 2  8 Warning Razor Edit  Compilation failed while validating changes to '~/App_Data/PageTemplates/1 column and 2 columns.cshtml'
+20130617 09:19:15.2447 2  8 Warning Razor Edit  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\PageTemplates\_temp_1 column and 2 columns.cshtml(27): error CS0103: The name 'Left' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditRazorPageTemplateWorkflow.ValidateMarkup(String virtualPath, String content, EntityToken& newEntityToken)
+
+20130617 09:19:55.7540 2 45 Warning Razor Edit  Compilation failed while validating changes to '~/App_Data/PageTemplates/1 column and 2 columns.cshtml'
+20130617 09:19:55.7560 2 45 Warning Razor Edit  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\PageTemplates\_temp_1 column and 2 columns.cshtml(27): error CS0103: The name 'Left' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditRazorPageTemplateWorkflow.ValidateMarkup(String virtualPath, String content, EntityToken& newEntityToken)
+
+20130617 09:20:53.9613 2 45 Warning Razor Edit  Compilation failed while validating changes to '~/App_Data/PageTemplates/1 column and 2 columns.cshtml'
+20130617 09:20:53.9623 2 45 Warning Razor Edit  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\PageTemplates\_temp_1 column and 2 columns.cshtml(32): error CS0103: The name 'Left' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditRazorPageTemplateWorkflow.ValidateMarkup(String virtualPath, String content, EntityToken& newEntityToken)
+
+20130617 09:30:28.0032 2 50 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130617 09:38:40.8023 2 46 Warning Razor Edit  Compilation failed while validating changes to '~/App_Data/PageTemplates/interior VMenu.cshtml'
+20130617 09:38:40.8033 2 46 Warning Razor Edit  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\PageTemplates\_temp_interior VMenu.cshtml(15): error CS1026: ) expected
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditRazorPageTemplateWorkflow.ValidateMarkup(String virtualPath, String content, EntityToken& newEntityToken)
+
+20130617 09:41:14.6271 2 53 Warning Razor Edit  Compilation failed while validating changes to '~/App_Data/PageTemplates/interior VMenu.cshtml'
+20130617 09:41:14.6281 2 53 Warning Razor Edit  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\PageTemplates\_temp_interior VMenu.cshtml(15): error CS1026: ) expected
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.EditRazorPageTemplateWorkflow.ValidateMarkup(String virtualPath, String content, EntityToken& newEntityToken)
+
+20130617 09:43:52.3342 2 46 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130617 09:45:04.4083 2 43 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130617 09:54:37.3350 2 28 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 09:54:37:33 in process 1600
+20130617 09:54:37.4961 2 36 Error FileBasedFunctionProvider  Error instantiating Menu function
+20130617 09:54:37.5601 2 36 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 09:54:46.3246 3 36 Error FileBasedFunctionProvider  Error instantiating Menu function
+20130617 09:54:46.3386 3 36 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 09:54:48.5237 3 25 Error PageRenderer  Failed to execute function: Rain.Menu
+20130617 09:54:48.5267 3 25 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.Menu' ---> System.Web.HttpParseException: Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130617 09:54:48.5267 3 25 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130617 09:55:23.6377 3 65 Error FileBasedFunctionProvider  Error instantiating Menu function
+20130617 09:55:23.6387 3 65 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Menu.cshtml(36): error CS0103: The name 'ctive' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 09:55:28.3280 3 13 Error PageRenderer  Failed to execute function: Rain.Menu
+20130617 09:55:28.3290 3 13 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.Menu' ---> System.Web.HttpCompileException: e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Menu.cshtml(36): error CS0103: The name 'ctive' does not exist in the current context
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130617 09:55:28.3300 3 13 Error PageRenderer | INNER  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Menu.cshtml(36): error CS0103: The name 'ctive' does not exist in the current context
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130617 10:43:17.0210 3 57 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 10:43:17:02 in process 1600
+20130617 12:57:24.1803 2 30 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 12:57:24:18 in process 4184
+20130617 13:17:31.0633 2 38 Error FunctionWrapper  Failed to execute function: Rain.ServiceVMenu
+20130617 13:17:31.1233 2 38 Error FunctionWrapper  System.Xml.XmlException: The 'div' start tag on line 6 position 6 does not match the end tag of 'body'. Line 19, position 3.
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XNode.ReadFrom(XmlReader reader)
+   at Composite.AspNet.Razor.RazorHelper.OutputToXhtmlDocument(String output)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130617 13:20:51.2388 2 42 Error FileBasedFunctionProvider  Error instantiating ServiceVMenu function
+20130617 13:20:51.2748 2 42 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 13:20:53.4389 2 23 Error PageRenderer  Failed to execute function: Rain.ServiceVMenu
+20130617 13:20:53.4499 2 23 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.ServiceVMenu' ---> System.Web.HttpParseException: Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130617 13:20:53.4509 2 23 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "active".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130617 13:35:21.6016 2 14 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 13:35:21:60 in process 7960
+20130617 13:37:05.1605 3 14 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 13:37:05:15 in process 7960
+20130617 13:44:15.7511 4 44 Information MimeTypeInfo  Uploading file 'catalog3.jpg'. MIME type from extension: 'image/jpeg'
+20130617 13:44:29.8949 4 56 Information MimeTypeInfo  Uploading file 'catalog4.jpg'. MIME type from extension: 'image/jpeg'
+20130617 13:44:40.2525 4 44 Information MimeTypeInfo  Uploading file 'catalog2.jpg'. MIME type from extension: 'image/jpeg'
+20130617 14:05:17.9073 4 44 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130617 14:31:14.5024 4  7 Error FunctionWrapper  Failed to execute function: Rain.Client.ClientDetail
+20130617 14:31:14.5284 4  7 Error FunctionWrapper  System.Xml.XmlException: The 'img' start tag on line 11 position 30 does not match the end tag of 'div'. Line 12, position 27.
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XNode.ReadFrom(XmlReader reader)
+   at Composite.AspNet.Razor.RazorHelper.OutputToXhtmlDocument(String output)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130617 14:35:24.5837 4  8 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 14:35:24:58 in process 7960
+20130617 14:35:31.0040 5 46 Warning ConsoleMessageServiceFacade  Console 'key5789759764898293' has a last known change numer of 87, but server current number is 1.
+20130617 15:07:34.9831 5 32 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 15:07:34:98 in process 7960
+20130617 15:07:38.0322 6 32 Warning ConsoleMessageServiceFacade  Console 'key5789759764898293' has a last known change numer of 3, but server current number is 1.
+20130617 15:07:38.8583 6 60 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 15:07:38:85 in process 7960
+20130617 15:25:07.1102 7 46 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 15:25:07:11 in process 7960
+20130617 15:28:36.0912 8 50 Error FileBasedFunctionProvider  Error instantiating ClientDetail function
+20130617 15:28:36.1582 8 50 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 15:28:37.8003 8 41 Error PageRenderer  Failed to execute function: Rain.Client.ClientDetail
+20130617 15:28:37.8023 8 41 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.Client.ClientDetail' ---> System.Web.HttpParseException: Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130617 15:28:37.8033 8 41 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130617 15:28:40.6865 8 28 Error PageRenderer  Failed to execute function: Rain.Client.ClientDetail
+20130617 15:28:40.6885 8 28 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.Client.ClientDetail' ---> System.Web.HttpParseException: Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130617 15:28:40.6885 8 28 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130617 15:28:48.3679 8  8 Error PageRenderer  Failed to execute function: Rain.Client.ClientDetail
+20130617 15:28:48.3689 8  8 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.Client.ClientDetail' ---> System.Web.HttpParseException: Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130617 15:28:48.3689 8  8 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Unexpected "{" after "@" character. Once inside the body of a code block (@if {}, @{}, etc.) you do not need to use "@{" to switch to code.
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130617 15:36:20.8758 8 20 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 15:36:20:87 in process 7960
+20130617 15:38:14.8983 9 56 Error FileBasedFunctionProvider  Error instantiating StandardGallery function
+20130617 15:38:14.9333 9 56 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\StandardGallery.cshtml(23): error CS0103: The name 'Randomized' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 15:39:04.7492 9 61 Error FileBasedFunctionProvider  Error instantiating StandardGallery function
+20130617 15:39:04.7502 9 61 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\StandardGallery.cshtml(23): error CS0103: The name 'Randomized' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 15:39:09.4444 9  5 Error FileBasedFunctionProvider  Error instantiating StandardGallery function
+20130617 15:39:09.4604 9  5 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\StandardGallery.cshtml(23): error CS0103: The name 'Randomized' does not exist in the current context
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130617 15:49:17.1062 9  5 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130617 15:51:40.3544 9 46 Error FunctionWrapper  Failed to execute function: Rain.StandardGallery
+20130617 15:51:40.4724 9 46 Error FunctionWrapper  System.InvalidOperationException: No data exist given the data key values
+   at Composite.Data.DataFacade.GetDataByUniqueKey[T](Object dataKeyValue)
+   at Composite.Data.DataReference`1.get_Data()
+   at lambda_method(Closure , IMediaFile )
+   at System.Linq.Enumerable.WhereListIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ASP._Page_App_Data_Razor_Rain_StandardGallery_cshtml.Execute() in e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\StandardGallery.cshtml:line 24
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130617 15:58:40.4354 9  8 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 9 ended at 15:58:40:43 in process 7960

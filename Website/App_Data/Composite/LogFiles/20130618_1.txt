@@ -1,0 +1,92 @@
+﻿20130618 15:37:23.9938 5  1 Error FileBasedFunctionProvider  Error instantiating CatalogList function
+20130618 15:37:24.0228 5  1 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "Title".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130618 15:37:25.9239 5 29 Error PageRenderer  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:37:25.9269 5 29 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Rain.Catalog.CatalogList' ---> System.Web.HttpParseException: Expected a "{" but found a "Title".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20130618 15:37:25.9279 5 29 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "Title".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20130618 15:38:20.4460 5 20 Error FunctionWrapper  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:38:20.4760 5 20 Error FunctionWrapper  System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_App_Data_Razor_Rain_Catalog_CatalogList_cshtml.Execute() in e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Catalog\CatalogList.cshtml:line 27
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130618 15:49:08.3231 5 93 Error FunctionWrapper  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:49:08.3241 5 93 Error FunctionWrapper  System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_App_Data_Razor_Rain_Catalog_CatalogList_cshtml.Execute() in e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Catalog\CatalogList.cshtml:line 27
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130618 15:50:55.8482 5 71 Error FunctionWrapper  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:50:55.8492 5 71 Error FunctionWrapper  System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_App_Data_Razor_Rain_Catalog_CatalogList_cshtml.Execute() in e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Catalog\CatalogList.cshtml:line 27
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130618 15:51:24.9139 5 83 Error FunctionWrapper  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:51:24.9139 5 83 Error FunctionWrapper  System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_App_Data_Razor_Rain_Catalog_CatalogList_cshtml.Execute() in e:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Catalog\CatalogList.cshtml:line 27
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130618 16:34:14.3929 5 59 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 16:34:14:39 in process 5044

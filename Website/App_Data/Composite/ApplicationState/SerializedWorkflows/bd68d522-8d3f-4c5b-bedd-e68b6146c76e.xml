@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormData>
+  <ContainerLabel />
+  <FormDefinition value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;cms:formdefinition xmlns=&quot;http://www.composite.net/ns/management/bindingforms/std.ui.controls.lib/1.0&quot; xmlns:f=&quot;http://www.composite.net/ns/management/bindingforms/std.function.lib/1.0&quot; xmlns:cms=&quot;http://www.composite.net/ns/management/bindingforms/1.0&quot;&gt;&#xD;&#xA;  &lt;cms:bindings&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;FileContent&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;FileName&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;FileMimeType&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;  &lt;/cms:bindings&gt;&#xD;&#xA;  &lt;cms:layout iconhandle=&quot;page-template-edit&quot;&gt;&#xD;&#xA;    &lt;TextEditor&gt;&#xD;&#xA;      &lt;TextEditor.MimeType&gt;&#xD;&#xA;        &lt;cms:read source=&quot;FileMimeType&quot; /&gt;&#xD;&#xA;      &lt;/TextEditor.MimeType&gt;&#xD;&#xA;      &lt;TextEditor.Label&gt;&#xD;&#xA;        &lt;cms:read source=&quot;FileName&quot; /&gt;&#xD;&#xA;      &lt;/TextEditor.Label&gt;&#xD;&#xA;      &lt;cms:bind source=&quot;FileContent&quot; /&gt;&#xD;&#xA;    &lt;/TextEditor&gt;&#xD;&#xA;  &lt;/cms:layout&gt;&#xD;&#xA;&lt;/cms:formdefinition&gt;" />
+  <CustomToolbarDefinition />
+  <ContainerType>
+    <SerializerHandler value="SerializerHandlerType='Composite\.C1Console\.Actions\.StandardUiContainerTypesSerializerHandler,Composite'SerializedObject='Document'" />
+  </ContainerType>
+  <Bindings>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FilePath" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="E:\GitHubApp\Interior\Website\App_Data\PageTemplates\Home.cshtml" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FileContent" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="@inherits RazorPageTemplate&#xA;&#xA;@functions {&#xA;&#x9;public override void Configure()&#xA;&#x9;{&#xA;&#x9;&#x9;TemplateId = new Guid(&quot;7d422b58-ce67-4a30-a2ed-61529eccd411&quot;);&#xA;&#x9;&#x9;TemplateTitle = &quot;Home&quot;;&#xA;&#x9;    Layout = &quot;InteriorMaster.cshtml&quot;;&#xA;    }&#xA;&#x9;&#xA;&#x9; &#xA;&#xA;&#x9;[Placeholder(Id = &quot;content&quot;, Title=&quot;Content&quot;, IsDefault = true)]&#xA;    public XhtmlDocument Content { get; set; } &#xA;}&#xA;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&#xA;&#x9;&#x9;@*you can add template specific head elements here*@&#xA;&#x9;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#x9;&#x9; &#xA;&#x9;&#x9;&#x9;&#x9;@Html.Raw(Content)&#xA;&#x9;&#x9;&#x9; &#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FileName" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Home.cshtml" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FileMimeType" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="application/x-cshtml" />
+        </Value>
+      </KeyPair>
+    </Dictionary>
+  </Bindings>
+  <BindingsValidationRules>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </BindingsValidationRules>
+  <ExcludedEvents>
+    <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </ExcludedEvents>
+</FormData>

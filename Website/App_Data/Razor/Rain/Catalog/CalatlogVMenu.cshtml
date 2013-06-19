@@ -1,0 +1,39 @@
+@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get { return "A demo function that outputs a hello message."; }
+    } 
+
+    [FunctionParameter(Label = "Detail Page")]
+    public DataReference<IPage> DetailPage { get; set; }
+    
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body>
+    <div class="interior-vmenu">
+        <ul class="nav nav-list">
+    @{ 
+        var listData = Data.Get<Rain.Catalog.RootCatalogs>().OrderBy(a=>a.Order).ToList();
+        foreach (var item in listData)
+        {
+            var uniqueTitle = My.Utils.convertToUrl(item.Title);
+            string url = Html.C1().PageUrl(DetailPage.Data).ToString() + "/" + uniqueTitle;
+            var active = "";
+            if (My.Utils.PathInfoString(0) == uniqueTitle)
+            {
+                active = "active";
+            }
+             <li class="@active"><a href="@url">@item.Title</a></li>
+        }
+    }
+    
+          
+        </ul>
+    </div>
+</body>
+</html>

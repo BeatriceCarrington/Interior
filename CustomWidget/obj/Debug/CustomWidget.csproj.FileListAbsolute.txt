@@ -1,0 +1,4 @@
+E:\GitHubApp\Interior\Website\Bin\CustomWidget.dll
+E:\GitHubApp\Interior\Website\Bin\CustomWidget.pdb
+E:\GitHubApp\Interior\CustomWidget\obj\Debug\CustomWidget.dll
+E:\GitHubApp\Interior\CustomWidget\obj\Debug\CustomWidget.pdb

@@ -1,0 +1,40 @@
+@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get  { return "A demo function that outputs a hello message."; }
+    }
+     
+    [FunctionParameter(DefaultValue = "World")]
+    public string Name { get; set; }
+    
+    
+  
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body>
+     
+        @{
+            Composite.Core.Routing.Pages.C1PageRoute.RegisterPathInfoUsage();
+            string Title = My.Utils.PathInfoString(0);
+            Rain.Services services = null;
+            if (!string.IsNullOrEmpty(Title))
+            {
+                services = Data.Get<Rain.Services>().Where(t =>My.Utils.convertToUrl(t.Title) == Title).FirstOrDefault();
+            }
+            
+            if(services!=null)
+            {
+                <div class="heading1">
+                       @services.Title
+                    </div>
+                @Html.Raw(services.Content);
+            }
+        }
+     
+</body>
+</html>

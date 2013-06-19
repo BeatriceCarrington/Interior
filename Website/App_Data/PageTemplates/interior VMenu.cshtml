@@ -1,0 +1,35 @@
+﻿@inherits RazorPageTemplate
+@functions {
+	public override void Configure()
+	{
+		TemplateId = new Guid("3c74a260-4156-4976-a219-786e7e404d94");
+		TemplateTitle = "[interior] VMenu";
+		 Layout = "InteriorMaster.cshtml";
+	}
+
+	
+
+	[Placeholder(Id = "herounit")]
+	public XhtmlDocument HeroUnit { get; set; }
+	
+	[Placeholder(Id = "vmenu")]
+	public XhtmlDocument Vmenu { get; set; }
+	
+	[Placeholder(Id = "content", IsDefault = true)]
+	public XhtmlDocument Content { get; set; }
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		@*you can add template specific head elements here*@
+	</head>
+	<body>
+		 <div class="row-fluid">
+                <div class="span3">
+                   @Markup(Vmenu)
+                </div>
+                <div class="span9">
+                    @Markup(Content)
+                </div>
+            </div>
+	</body>
+</html>

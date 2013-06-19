@@ -2,4 +2,5 @@
 <GeneratedTypeWhiteListElementsElements>
   <GeneratedTypeWhiteListElements TypeManagerTypeName="Content.ContentSpot" />
   <GeneratedTypeWhiteListElements TypeManagerTypeName="My.Content.News" />
+  <GeneratedTypeWhiteListElements TypeManagerTypeName="Rain.Catalog.Catalogs" />
 </GeneratedTypeWhiteListElementsElements>

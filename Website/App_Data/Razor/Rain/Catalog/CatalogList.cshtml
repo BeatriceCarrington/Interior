@@ -1,0 +1,94 @@
+@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get { return "A demo function that outputs a hello message."; }
+    }
+
+    public string GetRootCatalogName(Guid id)
+    {
+        var rootCatalog = Data.Get<Rain.Catalog.RootCatalogs>().Where(a => a.Id == id).ToList();
+        if (rootCatalog.Count > 0)
+            return rootCatalog[0].Title;
+        return "";
+    }
+    [FunctionParameter(Label = "Detail Page")]
+    public DataReference<IPage> DetailPage { get; set; }
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body>
+    @{
+        Composite.Core.Routing.Pages.C1PageRoute.RegisterPathInfoUsage();
+        string Title = My.Utils.PathInfoString(0);
+        if(Title==null ||Title.Trim()=="")
+        {
+            var temp = Data.Get<Rain.Catalog.RootCatalogs>().OrderBy(a => a.Order).ToList();
+            if (temp.Count > 0)
+            { Title = My.Utils.convertToUrl(temp[0].Title); }
+        }
+        var data = Data.Get<Rain.Catalog.RootCatalogs>().Where(t => My.Utils.convertToUrl(t.Title) == Title).FirstOrDefault();
+        var Listdata = new List<Rain.Catalog.Catalogs>();
+
+        if (!string.IsNullOrEmpty(Title))
+        {
+
+            Listdata = Data.Get<Rain.Catalog.Catalogs>().Where(t => My.Utils.convertToUrl(GetRootCatalogName(t.RootCatalog)) == Title).ToList();
+        }
+        if (data != null)
+        {
+        <div class="heading1">@data.Title</div>
+        <div class="catalog-info">
+            @Html.Raw(data.Desc)
+        </div>
+        
+        
+            if (Listdata != null && Listdata.Count > 0)
+            {
+
+                int i = 0;
+                foreach (var item in Listdata)
+                {
+                    var uniqueTitle = My.Utils.convertToUrl(item.Title);
+                    string url = Html.C1().PageUrl(DetailPage.Data).ToString() + "/" + uniqueTitle;
+                    if (i % 2 == 0)
+                    {
+                        @Html.Raw("<div class=\"row-fluid row-catalogs\">")
+                    }
+
+                        <div class="span6">
+                            <div class="catalog">
+                                <div class="cimage">
+                                    <a href="#">
+                                        <img src="@Html.C1().MediaUrl(item.Image)" /></a>
+                                </div>
+                                <div class="caption">
+                                    <div class="catalog-title">@item.Title</div>
+                                    <div><a class="view-button" href="@url">View</a></div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    if (i % 2 == 1)
+                    {
+                        @Html.Raw("</div>")
+                    }
+
+
+                    i++;
+                }
+                if (Listdata.Count % 2 == 1)
+                    {
+                        @Html.Raw("</div>")
+                    }
+            }
+
+        }
+    }
+
+
+</body>
+</html>

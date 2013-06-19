@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="5b695989-f1d5-4ccc-acac-eb946f69dab2" name="RootCatalogs" namespace="Rain.Catalog" title="RootCatalogs" hasCustomPhysicalSortOrder="false" isCodeGenerated="true" cachable="false" labelFieldName="Title" typeManagerTypeName="Rain.Catalog.RootCatalogs">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces />
+  <Fields>
+    <DataFieldDescriptor id="5563aa3e-bca5-435c-86bf-77fa13eaa030" name="Id" isNullable="false" position="-1" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false">
+      <FormRenderingProfile />
+      <ValidationFunctionMarkups />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="75823bdd-1e57-4f5f-a948-93291bb12367" name="Title" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='String'Length='64'" isReadOnly="false" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile label="Title" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.String.TextBox&quot; /&gt;" />
+      <ValidationFunctionMarkups />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="821bf235-720a-4b42-9c65-b6d357a93d30" name="Order" isNullable="false" position="1" groupByPriority="0" inherited="false" instanceType="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Integer'" isReadOnly="false" defaultValue="ValueType='Integer'Value='0'">
+      <FormRenderingProfile label="Order" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.Integer.TextBox&quot; /&gt;" />
+      <TreeOrderingProfile orderPriority="1" orderDescending="false" />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="cdcda89a-4dd8-4c09-aa2a-f60b0f0490a2" name="Desc" isNullable="false" position="2" groupByPriority="0" inherited="false" instanceType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='LargeString'" isReadOnly="false" newInstanceDefaultFieldValue="&lt;f:function xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Constant.XhtmlDocument&quot;&gt;&lt;f:param name=&quot;Constant&quot;&gt;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head /&gt;&lt;body /&gt;&lt;/html&gt;&lt;/f:param&gt;&lt;/f:function&gt;" defaultValue="ValueType='String'Value=''">
+      <FormRenderingProfile label="Desc" helpText="" widgetFunctionMarkup="&lt;f:widgetfunction xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; name=&quot;Composite.Widgets.XhtmlDocument.VisualXhtmlEditor&quot; /&gt;" />
+    </DataFieldDescriptor>
+  </Fields>
+</DataTypeDescriptor>

@@ -1,0 +1,144 @@
+﻿20130618 08:23:23.5634 2 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 08:23:23:56 in process 1400
+20130618 09:54:05.5586 2 23 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 09:54:05:55 in process 3244
+20130618 09:59:39.2347 3 22 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 09:59:39:23 in process 3244
+20130618 09:59:41.9319 4 47 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 09:59:41:93 in process 3244
+20130618 10:11:02.6618 5 100 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 10:11:02:66 in process 3244
+20130618 10:11:06.5660 6 38 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 10:11:06:56 in process 3244
+20130618 11:29:29.9740 7 45 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 11:29:29:97 in process 3244
+20130618 11:44:55.8760 8 46 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 11:44:55:87 in process 3244
+20130618 11:53:03.0619 9 80 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 9 ended at 11:53:03:06 in process 3244
+20130618 11:56:13.3117 10  7 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 10 ended at 11:56:13:31 in process 3244
+20130618 12:23:17.7437 2 18 Warning ConsoleMessageServiceFacade  Console 'key07883961824516439' has a last known change numer of 89, but server current number is 1.
+20130618 12:44:12.7024 2 37 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 12:44:12:70 in process 7860
+20130618 14:26:05.4011 2 34 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130618 14:30:39.2607 2 33 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 14:30:39:25 in process 5044
+20130618 15:09:09.7199 3 10 Error FileBasedFunctionProvider  Error instantiating CatalogList function
+20130618 15:09:09.7909 3 10 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): The code block is missing a closing "}" character.  Make sure you have a matching "}" character for all the "{" characters within this block, and that none of the "}" characters are being interpreted as markup.
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130618 15:16:06.1887 3 82 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:E:\GitHubApp\Interior\Website\.
+
+20130618 15:20:55.0862 3 66 Error FunctionWrapper  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:20:55.1892 3 66 Error FunctionWrapper  System.Xml.XmlException: The 'body' start tag on line 4 position 2 does not match the end tag of 'div'. Line 33, position 3.
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XNode.ReadFrom(XmlReader reader)
+   at Composite.AspNet.Razor.RazorHelper.OutputToXhtmlDocument(String output)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130618 15:23:16.4383 3 28 Error FunctionWrapper  Failed to execute function: Rain.Catalog.CatalogList
+20130618 15:23:16.4403 3 28 Error FunctionWrapper  System.Xml.XmlException: The 'div' start tag on line 33 position 8 does not match the end tag of 'body'. Line 48, position 3.
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XNode.ReadFrom(XmlReader reader)
+   at Composite.AspNet.Razor.RazorHelper.OutputToXhtmlDocument(String output)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20130618 15:37:17.9454 3 93 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 15:37:17:94 in process 5044
+20130618 15:37:18.1905 3 25 Error FileBasedFunctionProvider  Error instantiating CatalogList function
+20130618 15:37:18.1905 3 25 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "Title".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130618 15:37:18.5055 3 18 Error FileBasedFunctionProvider  Error instantiating CatalogList function
+20130618 15:37:18.5065 3 18 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "Title".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130618 15:37:20.1486 4  1 Error FileBasedFunctionProvider  Error instantiating CatalogList function
+20130618 15:37:20.1626 4  1 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "Title".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20130618 15:37:21.5346 4 79 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 15:37:21:53 in process 5044

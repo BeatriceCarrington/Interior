@@ -1,0 +1,62 @@
+@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get { return "A demo function that outputs a hello message."; }
+    }
+
+    [FunctionParameter(DefaultValue = "World")]
+    public string Name { get; set; }
+
+    [FunctionParameter(Label = "Images folder", Help = "The media folder with the images you want to display in a slider")]
+    public DataReference<IMediaFileFolder> ImagesFolder { get; set; } 
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body>
+    @{
+        var imageQuery = Data.Get<IMediaFile>().Where(m => m.FolderPath == ImagesFolder.Data.Path);
+
+        //imageQuery = Randomized ? imageQuery.OrderBy(m => Guid.NewGuid()) : imageQuery;
+        var images = imageQuery.ToList();         
+        
+    }
+
+    <div class="row-fluid">
+        <div class="slider-content">
+            <div class="carousel slide" id="myCarousel">
+
+                <div class="carousel-inner">
+                    @foreach (var item in images)
+                    {
+                        <div class="item @( item == images.First() ? "active" : "")">
+                            <img alt="" src="@Html.C1().MediaUrl(item)"/>
+                        </div>
+                    }
+
+                </div>
+                <div class="slider-indicator" style="margin-left: 0px; margin-top: 15px;">
+                    <ol class="carousel-indicators">
+                        @{
+                            int i = 0;
+                            foreach (var item in imageQuery)
+                            {
+                            
+                            <li class="@( i == 0 ? "active" : "")" data-slide-to="@i" data-target="#myCarousel">
+                            </li>
+                          
+                                i = i + 1;
+                            }
+                        }
+
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

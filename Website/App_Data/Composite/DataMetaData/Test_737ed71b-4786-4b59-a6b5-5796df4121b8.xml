@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DataTypeDescriptor dataTypeId="737ed71b-4786-4b59-a6b5-5796df4121b8" name="Test" namespace="Rain" title="test" hasCustomPhysicalSortOrder="false" isCodeGenerated="true" cachable="false" labelFieldName="field1" typeManagerTypeName="Rain.Test">
+  <DataAssociations />
+  <DataScopes>
+    <DataScopeIdentifier name="public" />
+  </DataScopes>
+  <KeyPropertyNames>
+    <KeyPropertyName name="Id" />
+  </KeyPropertyNames>
+  <SuperInterfaces />
+  <Fields>
+    <DataFieldDescriptor id="478b3b2c-53d2-4166-bc0d-5c797db3047b" name="Id" isNullable="false" position="-1" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false" newInstanceDefaultFieldValue="&lt;f:function name=&quot;Composite.Utils.Guid.NewGuid&quot; xmlns:f=&quot;http://www.composite.net/ns/function/1.0&quot; /&gt;">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+    <DataFieldDescriptor id="5d2bbc0d-eaac-4128-91c2-1fa1e46418fb" name="field1" isNullable="false" position="0" groupByPriority="0" inherited="false" instanceType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" storeType="PhysicalStoreType='Guid'" isReadOnly="false" defaultValue="ValueType='Guid'Value='00000000-0000-0000-0000-000000000000'" foreignKeyReferenceTypeName="Layout.Navigation.TopLink">
+      <FormRenderingProfile />
+    </DataFieldDescriptor>
+  </Fields>
+</DataTypeDescriptor>
