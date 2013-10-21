@@ -1,0 +1,11 @@
+﻿20131021 20:30:24.5138 2 23 Warning UserValidation  Login as [admin] failed. Incorrect password.  IP address: ::1
+20131021 20:30:29.3490 2 26 Warning UserValidation  Login as [host] failed. User does not exist.  IP address: ::1
+20131021 20:37:55.1705 2 11 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 20:37:55:17 in process 35032
+20131021 21:53:48.8660 3 56 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 21:53:48:86 in process 35032
+20131021 21:57:33.4698 4 62 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131021 21:57:33.4698 4 59 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131021 22:13:08.8343 4 45 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131021 22:26:51.7474 4 33 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 22:26:51:74 in process 35032

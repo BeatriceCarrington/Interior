@@ -18,16 +18,21 @@
 <head>
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-inner">
 
-            <ul class="nav">
+
+
+<div class="menu">
+                            <ul>
+                             
+                         
+
+                          
                 @{  string active = "";
                     if (CurrentPageNode.Url == @HomePageNode.Url)
                     { active = "active"; }
                         }
-                <li class="@active">
-                    <a href="@HomePageNode.Url">@HomePageNode.MenuTitle</a>
+                <li >
+                    <a href="@HomePageNode.Url" class="@active"><span>@HomePageNode.MenuTitle</span></a>
                 </li>
 
                 @foreach (var page in pagenodes)
@@ -37,8 +42,8 @@
                         active = "";
                         if (CurrentPageNode.Url == page.Url)
                         { active = "active"; }
-                    <li class="@active">
-                        <a href="@page.Url">@page.MenuTitle</a>
+                    <li>
+                        <a href="@page.Url" class="@active"><span>@page.MenuTitle</span></a>
                     </li>
                     }
                 }
@@ -46,8 +51,8 @@
 
             </ul>
         </div>
-    </div>
-
+    
+     <div class="clr"></div>
 
 
 

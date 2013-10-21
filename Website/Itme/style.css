@@ -1,0 +1,105 @@
+@charset "utf-8";
+body { margin:0; padding:0; width:100%;}
+html { padding:0; margin:0;}
+
+/* main */
+.main {width:100%; padding:0; margin:0 auto; }
+.resize { width:985px; margin:0 auto;}
+
+/********** header **********/
+.header { background:url(images/header_bg.gif) top repeat-x; padding:0; margin:0 auto; }
+
+.block_header {margin:0 auto; width:960px; padding:0; border:none; }
+/* logo */
+.logo { float:left; padding:0; margin:0; width:227px;}
+/* search */
+.search { padding:30px 20px 0 0; margin:0; float:right; width:440px;}
+.search form { display:block; float:right; padding:5px 0;}
+.search span { display:block; float:left; background:url(images/search_bg.gif) left top no-repeat; width:138px; padding:0 10px; height:33px;}
+.search form .keywords { line-height:14px; float:left; border:0; width:138px; padding:9px 0; height:15px; background:none; margin:0; font:normal 14px Arial, Helvetica, sans-serif; color:#9c9c9c;}
+.search form .button { float:left; margin:0; padding:0;}
+/* menu */	
+.menu { float:right; padding:13px 0 0 0; margin:0; width:380px;}
+.menu ul {  padding:0; margin:0; list-style:none; border:0;}
+.menu ul li { float:left; margin:0; padding:0 1px; border:0;}
+.menu ul li a { float:left; margin:0; padding:13px 0; color:#434343; font:normal 12px Arial, Helvetica, sans-serif; text-decoration:none;}
+.menu ul li a span { padding:13px; background:none;}
+.menu ul li a:hover {  background: url(images/r_menu.gif) no-repeat right;}
+.menu ul li a:hover span {  background:url(images/l_menu.gif) no-repeat left;}
+.menu ul li a.active { background:url(images/r_menu.gif) no-repeat right;}
+.menu ul li a.active span {  background:url(images/l_menu.gif) no-repeat left;}
+/********** slider **********/
+.slider {background:#efefef url(images/simple_text_bg.gif) top center repeat-x; margin:0 auto; padding:0; height:350px;}
+/*header_text*/
+.header_text { margin:0 auto; padding:0;}
+.header_text .div { float:right; width:890px; padding:0; margin:0;}
+.header_text img { margin:30px 0 0 0; padding:0;}
+.header_text img.screen { float:left; margin:0; padding:12px 0 0 0;}
+.header_text .div .left1 { float:right; width:420px; padding:0; margin:0;}
+.header_text .div .left1 h2 { font:bold 40px Arial, Helvetica, sans-serif; color:#fff; padding:52px 0 20px 0; margin:0;}
+.header_text p.ulli { width:330px; font: normal 12px Arial, Helvetica, sans-serif; color:#fff; padding:5px 0 5px 20px; margin:0; background: url(images/simple_ul_li.gif) left no-repeat;}
+.header_text p { font: normal 12px Arial, Helvetica, sans-serif; color:#fff;}
+.header_text p.button { font: normal 12px Arial, Helvetica, sans-serif; color:#fff; margin-top:20px; padding:0;}
+/* ================*/
+.slider2 {background: url(images/simple_text_bg2.gif) top center repeat-x; margin:0 auto; padding:0; height:187px;}
+.header_text2 { margin:0 auto; padding:0; width:960px;}
+.header_text2 h2 { font:bold 40px Arial, Helvetica, sans-serif; color:#fff; padding:72px 0 20px 25px; margin:0;}
+/*top_sup*/
+.top_sup { padding:0 0 30px 0; margin:0; background:#efefef;}
+.top_sup_resize { width:960px; border-top:1px solid #d6d6d6; margin:0 auto; padding:0;}
+.top_sup_resize img { float:left; margin:5px 10px; padding:0;}
+.top_sup_resize p { font: normal 11px Arial, Helvetica, sans-serif; color:#5f5f5f; padding:5px; margin:0; line-height:1.8em;}
+.top_sup_resize strong { color:#2e2e2e;}
+.top_sup_resize .blogga { width:230px; float:left; margin:0 2px; padding:2px; border-right:1px solid #d6d6d6;}
+.top_sup_resize .blogga2 { width:230px; float:left; margin:0 2px; padding:2px;}
+/********** block index **********/
+.body { background: #fff; border-top:1px solid #e1e1e1;  }
+.body_resize { width:960px; margin:0 auto; padding:0;}
+.body h2 { font:normal 18px Arial, Helvetica, sans-serif; color:#2a2a2a; padding:15px 5px; margin:0;}
+.body p { font:normal 12px Arial, Helvetica, sans-serif; color:#5f5f5f; padding:10px 5px; margin:0; line-height:1.8em;}
+.body p span { color:#a4a4a4; font: normal 11px Arial, Helvetica, sans-serif; line-height:1.8em;}
+.body a { color:#2079c5; text-decoration:none;}
+.body p.test { margin:5px 20px; background: #f6f6f6 url(images/test.gif) top left no-repeat; border:3px solid #ececec; padding:10px 20px;}
+.body img { float:left; margin:5px 10px; padding:0;}
+.body img.floated { float:right; margin:5px 10px; padding:0;}
+.left { width:589px; float:left; margin:0; padding:0 20px; border-right:1px solid #f2f2f2;}
+.left .serv { width:265px; float:left; margin:0; padding:5px 10px;}
+.right  { width:290px; float:right; margin:0; padding:0 20px;}
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * { color:#F00;}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 0;}
+#contactform label { margin:0; width:110px; display:block; padding:10px 0; color:#5f5f5f; font: normal 12px Arial, Helvetica, sans-serif; text-transform:capitalize; float:left;}
+#contactform label span { color:#F00;}
+#contactform input.text { width:440px; border:1px solid #e7e7e7; margin:10px 0; padding:5px 2px; height:16px; background:#f8f8f8; float:left;}
+#contactform textarea { width:440px; border:1px solid #e7e7e7; margin:10px 0; padding:2px; background:#f8f8f8; float:left;}
+#contactform li.buttons input { padding:3px 0 3px 110px; margin:0; border:0; color:#FFF; float:left;}
+p.response { text-align:center; color:#F00; font: normal 11px  Georgia, "Times New Roman", Times, serif; line-height:1.8em; width:auto;}
+/*************footer**********/
+.footer { padding:0; margin:0 auto; background:#2077c4 url(images/footer_bg.gif) top repeat-x;}
+.footer_resize {width:960px; margin:0 auto; padding:30px 0 10px 0;}
+.footer p { font:normal 11px  Arial, Helvetica, sans-serif; color:#fff; line-height:1.8em;}
+.footer a { font:normal 11px Arial, Helvetica, sans-serif; color:#fff; text-decoration:underline; padding:5px; margin:0;}
+.footer img {margin:2px 5px; padding:0;}
+.footer p.leftt { text-align:left; width:50%; margin:0; padding:0; float:left;} 
+.footer p.rightt { text-align:right; width:50%; margin:0; padding:0; float:right;} 
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border-top:1px solid #ddd; padding:0; margin:10px 0; background:none; line-height:0;}
+
+
+
+
+.heading1 {
+   
+    font-size:19px;
+    padding:10px 0 10px 0;
+    font-weight:bold;
+    line-height:40px;
+}
+ .container960 {
+            width: 960px;
+            margin: 0px auto;
+        }

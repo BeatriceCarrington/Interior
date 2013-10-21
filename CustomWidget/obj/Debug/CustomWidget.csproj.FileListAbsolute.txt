@@ -2,3 +2,7 @@ E:\GitHubApp\Interior\Website\Bin\CustomWidget.dll
 E:\GitHubApp\Interior\Website\Bin\CustomWidget.pdb
 E:\GitHubApp\Interior\CustomWidget\obj\Debug\CustomWidget.dll
 E:\GitHubApp\Interior\CustomWidget\obj\Debug\CustomWidget.pdb
+D:\itme\interior\Website\Bin\CustomWidget.dll
+D:\itme\interior\Website\Bin\CustomWidget.pdb
+D:\itme\interior\CustomWidget\obj\Debug\CustomWidget.dll
+D:\itme\interior\CustomWidget\obj\Debug\CustomWidget.pdb

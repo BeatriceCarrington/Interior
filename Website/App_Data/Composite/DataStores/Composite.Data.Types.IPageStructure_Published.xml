@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PageStructureElementsElements>
-  <PageStructureElements Id="278f362f-fa35-444c-8352-ab8ccf6c0a85" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="3" />
-  <PageStructureElements Id="6b5e9aa5-832b-4839-82a5-3b6f9b03b97a" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="6" />
-  <PageStructureElements Id="84c38222-a0bd-4b35-883c-21786649601b" ParentId="a27eb0c4-ba5a-48f0-8fe5-35d14a91afdc" LocalOrdering="0" />
+  <PageStructureElements Id="278f362f-fa35-444c-8352-ab8ccf6c0a85" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="1" />
+  <PageStructureElements Id="55944291-69de-46c6-b0ff-7907ac695ac4" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="4" />
+  <PageStructureElements Id="7f5b89ae-f57b-49b5-902e-56711d618fca" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="5" />
   <PageStructureElements Id="86b743f5-8dd1-4eea-97f7-4e98423da026" ParentId="00000000-0000-0000-0000-000000000000" LocalOrdering="0" />
-  <PageStructureElements Id="a27eb0c4-ba5a-48f0-8fe5-35d14a91afdc" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="1" />
-  <PageStructureElements Id="b56679d4-39bc-4eef-bb80-78680de04914" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="4" />
-  <PageStructureElements Id="cb842acc-32ac-427f-a4c0-ae204b20a8b7" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="5" />
-  <PageStructureElements Id="cf022cb6-8eb8-4bca-a6d4-e96f5e9921a7" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="2" />
+  <PageStructureElements Id="b56679d4-39bc-4eef-bb80-78680de04914" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="2" />
+  <PageStructureElements Id="cb842acc-32ac-427f-a4c0-ae204b20a8b7" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="3" />
   <PageStructureElements Id="d35972db-c9df-46db-93ff-1081d96e74e9" ParentId="86b743f5-8dd1-4eea-97f7-4e98423da026" LocalOrdering="0" />
 </PageStructureElementsElements>
