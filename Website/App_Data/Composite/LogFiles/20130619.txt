@@ -1,3 +1,7 @@
 ﻿20130619 10:12:20.4881 2 45 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 10:12:20:46 in process 6532
 20130619 10:14:52.4988 3 35 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 10:14:52:49 in process 6532
 20130619 10:18:30.1993 4  7 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 10:18:30:19 in process 6532
+20130619 11:06:10.8229 5 27 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 11:06:10:82 in process 6532
+20130619 11:06:18.9493 6 71 Warning ConsoleMessageServiceFacade  Console 'key04632445681242148' has a last known change numer of 54, but server current number is 1.
+20130619 11:06:23.7606 6 18 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 11:06:23:75 in process 6532
+20130619 15:20:50.9148 2 15 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 15:20:50:88 in process 7364
