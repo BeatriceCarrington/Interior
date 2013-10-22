@@ -9,6 +9,8 @@
 
     [Placeholder(Id = "Top", Title = "Top")]
     public XhtmlDocument Top { get; set; }
+	  [Placeholder(Id = "Top2", Title = "Top2")]
+    public XhtmlDocument Top2 { get; set; }
 
     [Placeholder(Id = "Left", Title = "Left", IsDefault = true)]
     public XhtmlDocument Left { get; set; }
@@ -26,6 +28,11 @@
         @Markup(Top)
 
     </div>
+	 <div class="row-fluid"> 
+        <div class="container960">
+			 @Markup(Top2)
+		 </div>
+	</div>
     <div class="row-fluid"> 
         <div class="container960">
             <div class="span8">
@@ -37,36 +44,9 @@
                 <div>
                         
                         <div class="heading1">News &amp; Events</div>
-                        <p>
-                            <strong>5th / April / 2009</strong><br />
-                            Integer mauris. Cras iaculis viverra dolorqw. Nulla suscipit.
-                        </p>
-                        <p>
-                            <strong>6th / April / 2009</strong><br />
-                            Cras iaculis viverra dolor. Nulla suscipit. Proin eu sapien ac sem fermentum sollicitudin.
-                        </p>
-                        <p>
-                            <strong>7th / April / 2009</strong><br />
-                            Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
-                        many web sites still in their infancy.
-                        </p>
-                        <p><strong><a href="#">More News</a></strong></p>
-                         <div class="heading1">Get in touch</div>
-                       
-                        <div class="bg"></div>
-                        <p>
-                            <strong>Address</strong>: 1458 Sample Road, Greenvalley, 12<br />
-                            <strong>Telephone</strong>: +123-1234-5678<br />
-                            <strong>FAX</strong>: +458-4578<br />
-                            <strong>Others</strong>: +301 - 0125 - 01258<br />
-                            <strong>E-mail</strong>: <a href="#">mail@yoursitename.com</a>
-                        </p>
-                        <div class="bg"></div>
-                        <img src="/itme/images/twitter.jpg" alt="picture" width="81" height="68" />
-                        <p>
-                            <strong>Follow us on Twitter</strong><br />
-                            Vestibulum posu eros vitae nunc<a href="#"> twitter.com/yourusername</a>
-                        </p>
+                        <f:function name="My.Content.NewsList" xmlns:f="http://www.composite.net/ns/function/1.0">
+			<f:param name="NewsDetailPage" value="cb842acc-32ac-427f-a4c0-ae204b20a8b7" />
+		</f:function>
                     </div>
             </div>
         </div>

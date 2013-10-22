@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ElementStructure xmlns="http://www.composite.net/ns/management/trees/treemarkup/1.0" xmlns:f="http://www.composite.net/ns/function/1.0">
+	<ElementStructure.AutoAttachments>
+		<NamedParent Name="Content.WebsiteItems" Position="Bottom"/>
+	</ElementStructure.AutoAttachments>
+	<ElementRoot>
+		<Children>
+			<Element Label="Con khi gia" Id="ContactFormEmailTemplate">
+				<Actions>
+					<AddDataAction Type="Rain.Catalog.Catalogs" Label="Add catalog"/> 
+				</Actions>
+				<Children>
+
+					<DataElements Type="Rain.Catalog.Catalogs" Label="${C1:Data:Rain.Catalog.Catalogs:Title}" Display="Auto">
+						<Actions>
+							<EditDataAction Label="Edit catalog" />
+						</Actions>
+					</DataElements>
+				</Children>
+			</Element>
+		</Children>
+
+	</ElementRoot>
+</ElementStructure>

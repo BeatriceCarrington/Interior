@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormData>
+  <ContainerLabel />
+  <FormDefinition value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;cms:formdefinition xmlns=&quot;http://www.composite.net/ns/management/bindingforms/std.ui.controls.lib/1.0&quot; xmlns:f=&quot;http://www.composite.net/ns/management/bindingforms/std.function.lib/1.0&quot; xmlns:cms=&quot;http://www.composite.net/ns/management/bindingforms/1.0&quot;&gt;&#xD;&#xA;  &lt;cms:bindings&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;FileContent&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;FileName&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;    &lt;cms:binding name=&quot;FileMimeType&quot; type=&quot;System.String&quot; /&gt;&#xD;&#xA;  &lt;/cms:bindings&gt;&#xD;&#xA;  &lt;cms:layout iconhandle=&quot;razor-function-edit&quot;&gt;&#xD;&#xA;    &lt;TextEditor&gt;&#xD;&#xA;      &lt;TextEditor.MimeType&gt;&#xD;&#xA;        &lt;cms:read source=&quot;FileMimeType&quot; /&gt;&#xD;&#xA;      &lt;/TextEditor.MimeType&gt;&#xD;&#xA;      &lt;TextEditor.Label&gt;&#xD;&#xA;        &lt;cms:read source=&quot;FileName&quot; /&gt;&#xD;&#xA;      &lt;/TextEditor.Label&gt;&#xD;&#xA;      &lt;cms:bind source=&quot;FileContent&quot; /&gt;&#xD;&#xA;    &lt;/TextEditor&gt;&#xD;&#xA;  &lt;/cms:layout&gt;&#xD;&#xA;&lt;/cms:formdefinition&gt;" />
+  <CustomToolbarDefinition />
+  <ContainerType>
+    <SerializerHandler value="SerializerHandlerType='Composite\.C1Console\.Actions\.StandardUiContainerTypesSerializerHandler,Composite'SerializedObject='Document'" />
+  </ContainerType>
+  <Bindings>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Title" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewsList.cshtml" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FileContent" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="@inherits RazorFunction&#xA;&#xA;@functions {&#xA;    public override string FunctionDescription&#xA;    {&#xA;        get { return &quot;Show news list&quot;; }&#xA;    }&#xA;&#xA;    [FunctionParameter(Label = &quot;News Detail Page&quot;)]&#xA;    public DataReference&lt;IPage&gt; NewsDetailPage { get; set; }&#xA;&#xA;}&#xA;&#xA;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&lt;head&gt;&#xA;    &lt;link href=&quot;~/Frontend/Styles/news.css&quot; rel=&quot;stylesheet&quot; /&gt;&#xA;    &lt;link href=&quot;~/Frontend/Styles/pajinate.css&quot; rel=&quot;stylesheet&quot; /&gt;&#xA;    &lt;script src=&quot;~/Frontend/Scripts/jquery.pajinate.js&quot;&gt;&lt;/script&gt;&#xA;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&#x9;&lt;style&gt;&#xA;&#x9;&#x9;.news-item{&#xA;&#x9;&#x9;&#x9;margin-top:20px;&#xA;&#x9;&#x9;}&#x9;&#x9;&#xA;&#x9;&lt;/style&gt;&#xA;    &lt;div class=&quot;top-heading&quot;&gt;&#xA;        &#xA;    &lt;/div&gt;&#xA;    &lt;div class=&quot;news-section clearfix&quot;&gt;&#xA;    @{&#xA;        var news = Data.Get&lt;My.Content.News&gt;().OrderByDescending(t =&gt; t.PublishDate).ToList();&#xA;&#xA;        if (news.Count &gt; 0)&#xA;        {&#xA;            &lt;ul class=&quot;content news-item&quot; style=&quot;list-style-type:none;&quot;&gt;&#xA;            @foreach (var item in news)&#xA;            {&#xA;                int i = news.IndexOf(item) + 1;&#xA;                string url = Html.C1().PageUrl(NewsDetailPage.Data).ToString() + &quot;/&quot; + item.PublishDate.ToString(&quot;yyyy&quot;) + &quot;-&quot; +  @item.PublishDate.ToString(&quot;MM&quot;) + &quot;-&quot; + item.PublishDate.ToString(&quot;dd&quot;) + &quot;/&quot; + My.Utils.convertToUrl(item.Title);&#xA;                &lt;li&gt;&#xA;                &lt;div class=&quot;news-block clearfix&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;div&gt;&lt;a href=&quot;@url&quot; class=&quot;news-title&quot;&gt;@item.Title&lt;/a&gt;&lt;/div&gt;&#xA;                    &lt;a href=&quot;@url&quot; class=&quot;news-pics&quot;&gt;&#xA;                        &lt;img src=&quot;@Html.C1().MediaUrl(item.Image)&quot; width=&quot;205&quot; /&gt;&lt;span class=&quot;img-shadow&quot;&gt;&lt;/span&gt;&lt;/a&gt;&#xA;                    &lt;div class=&quot;news-detail&quot;&gt; &#xA;                        &lt;p class=&quot;teaster&quot;&gt;&#xA;                            @item.Summary&#xA;                        &lt;/p&gt;&#xA;                        &lt;a href=&quot;@url&quot; class=&quot;readmore-btn&quot;&gt;ReadMore&lt;/a&gt;&#xA;                    &lt;/div&gt;&#xA;                &lt;/div&gt;&#xA;                &lt;/li&gt;&#xA;            }&#xA;            &lt;/ul&gt;&#x9;&#xA;            &lt;div class=&quot;page_navigation&quot;&gt;&lt;/div&gt;&#xA;        }&#xA;    }&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;script type=&quot;text/javascript&quot;&gt;&#xA;        $(document).ready(function () {&#xA;            $('.news-section').pajinate({&#xA;                items_per_page: 3,&#xA;                num_page_links_to_display: 5,&#xA;                nav_label_first: '&amp;lt;&amp;lt;',&#xA;                nav_label_last: '&amp;gt;&amp;gt;',&#xA;                nav_label_prev: '&amp;lt;',&#xA;                nav_label_next: '&amp;gt;'&#xA;            });&#xA;        });&#xA;    &lt;/script&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;&#xA;" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FileName" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NewsList.cshtml" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="FileMimeType" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="application/x-cshtml" />
+        </Value>
+      </KeyPair>
+    </Dictionary>
+  </Bindings>
+  <BindingsValidationRules>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </BindingsValidationRules>
+  <ExcludedEvents>
+    <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </ExcludedEvents>
+</FormData>

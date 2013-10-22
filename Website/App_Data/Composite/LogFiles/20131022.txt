@@ -1,0 +1,24 @@
+﻿20131022 15:32:59.3501 2 37 Error Composite.Forms.ContactForm  System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.5.1 Authentication Required. Learn more at
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Composite.Forms.ContactForm.Functions.SendEmail(String fromName, String fromEmail, String toName, String toEmail, String subject, String body)
+   at Composite.Forms.ContactForm.Functions.<Send>d__2.MoveNext()
+20131022 16:39:20.4765 2 13 Error FunctionWrapper  Failed to execute function: My.Content.NewsList
+20131022 16:39:20.5136 2 13 Error FunctionWrapper  System.Xml.XmlException: The 'div' start tag on line 19 position 7 does not match the end tag of 'li'. Line 29, position 19.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   at System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   at System.Xml.XmlTextReaderImpl.ParseEndElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r)
+   at System.Xml.Linq.XContainer.ReadContentFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XElement.ReadElementFrom(XmlReader r, LoadOptions o)
+   at System.Xml.Linq.XNode.ReadFrom(XmlReader reader)
+   at Composite.AspNet.Razor.RazorHelper.OutputToXhtmlDocument(String output)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorBasedFunction.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20131022 16:42:35.0390 2 45 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 16:42:35:03 in process 11468

@@ -1,4 +1,4 @@
-@inherits RazorFunction
+﻿@inherits RazorFunction
 
 @functions {
     public override string FunctionDescription
@@ -19,6 +19,11 @@
 
 </head>
 <body>
+	<style>
+		.news-item{
+			margin-top:20px;
+		}		
+	</style>
     <div class="top-heading">
         
     </div>
@@ -28,17 +33,17 @@
 
         if (news.Count > 0)
         {
-            <ul class="content">
+            <ul class="content news-item" style="list-style-type:none;">
             @foreach (var item in news)
             {
                 int i = news.IndexOf(item) + 1;
                 string url = Html.C1().PageUrl(NewsDetailPage.Data).ToString() + "/" + item.PublishDate.ToString("yyyy") + "-" +  @item.PublishDate.ToString("MM") + "-" + item.PublishDate.ToString("dd") + "/" + My.Utils.convertToUrl(item.Title);
                 <li>
                 <div class="news-block clearfix">
+					<div><a href="@url" class="news-title">@item.Title</a></div>
                     <a href="@url" class="news-pics">
                         <img src="@Html.C1().MediaUrl(item.Image)" width="205" /><span class="img-shadow"></span></a>
-                    <div class="news-detail">
-                        <a href="@url" class="news-title">@item.Title</a>
+                    <div class="news-detail"> 
                         <p class="teaster">
                             @item.Summary
                         </p>
