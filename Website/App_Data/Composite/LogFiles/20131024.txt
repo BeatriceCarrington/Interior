@@ -1,1 +1,4 @@
 ﻿20131024 14:25:55.0253 2 58 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 14:25:55:02 in process 11632
+20131024 15:53:55.6570 2 36 Warning UserValidation  Login as [host] failed. User does not exist.  IP address: ::1
+20131024 15:54:00.2117 2 34 Warning UserValidation  Login as [admin] failed. Incorrect password.  IP address: ::1
+20131024 16:33:05.2140 2 42 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 16:33:05:21 in process 7476
