@@ -22,3 +22,4 @@
    at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorBasedFunction.Execute(ParameterList parameters, FunctionContextContainer context)
    at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
 20131022 16:42:35.0390 2 45 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 16:42:35:03 in process 11468
+20131022 16:59:41.9937 4 65 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 16:59:41:99 in process 11468
