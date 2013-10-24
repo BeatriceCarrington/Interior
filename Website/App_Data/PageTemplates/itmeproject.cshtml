@@ -1,0 +1,64 @@
+﻿@inherits RazorPageTemplate
+@functions {
+    public override void Configure()
+    {
+        TemplateId = new Guid("91f65371-7e5d-4d15-b076-d2909e968692");
+        TemplateTitle = "[itme]project";
+        Layout = "ItmeMaster.cshtml";
+    }
+
+    [Placeholder(Id = "Top", Title = "Top")]
+    public XhtmlDocument Top { get; set; } 
+    [Placeholder(Id = "Left", Title = "Left", IsDefault = true)]
+    public XhtmlDocument Left { get; set; }
+
+    [Placeholder(Id = "Right", Title = "Right")]
+    public XhtmlDocument Right { get; set; }
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @*you can add template specific head elements here*@
+<script src="~/Itme/colorbox/jquery.colorbox-min.js"></script>
+    <link href="~/Itme/colorbox/colorbox.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        $(document).ready(function () { 
+            $(".item").colorbox({ rel: 'group4', slideshow: true });
+        });
+    </script>
+</head>
+<body>
+    <div class="row-fluid"> 
+        @Markup(Top)     
+	</div>
+ 
+    <div class="row-fluid"> 
+        <div class="container960">
+            <div class="span8">
+                @Markup(Left)
+            </div>
+            <div class="span4">
+				<div>
+					<h3>Danh mục web</h3>
+					<ul class="nav nav-list">
+						<li class="active"><a href="#">Thời trang</a></li>
+						<li><a href="#">Ẩm thực</a></li>
+						<li><a href="#">Điện máy, điện tử</a></li>
+						<li><a href="#">Công ty</a></li>
+						<li><a href="#">Sự kiện</a></li>
+					</ul>
+				</div>
+                @Markup(Right)
+
+                <div>
+                        
+                        <div class="heading1">Tin tức &amp; sự kiện</div>
+                        <f:function name="My.Content.NewsList" xmlns:f="http://www.composite.net/ns/function/1.0">
+			<f:param name="NewsDetailPage" value="cb842acc-32ac-427f-a4c0-ae204b20a8b7" />
+		</f:function>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

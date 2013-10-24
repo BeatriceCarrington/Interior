@@ -1,0 +1,50 @@
+﻿@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get { return "Show news list"; }
+    }
+
+    [FunctionParameter(Label = "News Detail Page")]
+    public DataReference<IPage> NewsDetailPage { get; set; }
+
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body> 
+    <div class="news-section clearfix">
+        @{
+            var news = Data.Get<My.Content.News>().OrderByDescending(t => t.PublishDate).Take(5).ToList();
+
+            if (news.Count > 0)
+            {
+           
+               
+                foreach (var item in news)
+                {
+                    int i = news.IndexOf(item) + 1;
+                    string url = Html.C1().PageUrl(NewsDetailPage.Data).ToString() + "/" + item.PublishDate.ToString("yyyy") + "-" + @item.PublishDate.ToString("MM") + "-" + item.PublishDate.ToString("dd") + "/" + My.Utils.convertToUrl(item.Title);
+                    <div style="margin-bottom:20px">
+                        <div class="news-block clearfix">
+                            <div><a href="@url" class="news-title">@item.Title</a></div>
+                            <a href="@url" class="news-pics">
+                                <span class="img-shadow"></span></a>
+                            <div class="news-detail">
+                                <p class="teaster">
+                                    @item.Summary
+                                </p>
+                                <a href="@url" class="readmore-btn">Chi tiết</a>
+                            </div>
+                        </div>
+                    </div>
+                } 
+            }
+        }
+    </div>
+
+
+</body>
+</html>

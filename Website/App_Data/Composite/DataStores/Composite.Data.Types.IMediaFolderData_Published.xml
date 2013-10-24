@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MediaFolderDataElementsElements>
+  <MediaFolderDataElements Id="212aec42-d59f-4340-9146-696d8debd55a" Path="/LamDep" />
+  <MediaFolderDataElements Id="3a37fa4d-5d01-4ca3-a162-4a25ee02d882" Path="/ThoiTrang" />
+  <MediaFolderDataElements Id="3a6e2366-137c-49f8-9e26-02ab57c72a41" Path="/NoiThat" />
   <MediaFolderDataElements Id="3c5191d4-2530-4a84-9b49-fceadf2ec657" Path="/Gallery" />
+  <MediaFolderDataElements Id="7df8946c-2f66-4f1b-8827-e5588ac2f7bb" Path="/AmThuc" />
+  <MediaFolderDataElements Id="a73760a2-b503-4937-9cf5-8bb9594a5017" Path="/DienTu" Title="" Description="" />
 </MediaFolderDataElementsElements>
