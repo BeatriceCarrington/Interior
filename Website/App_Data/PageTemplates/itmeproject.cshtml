@@ -23,13 +23,19 @@
     <script type="text/javascript">
 
         $(document).ready(function () { 
-            $(".item").colorbox({ rel: 'group4', slideshow: true });
+            $(".item").colorbox({ rel: 'group4',  photo: true });
         });
     </script>
 </head>
 <body>
     <div class="row-fluid"> 
-        @Markup(Top)     
+       	<div class="slider2">
+			<div class="header_text2">
+				<h2>Website mẩu: @CurrentPageNode.Title</h2>
+				<div class="clr"></div>
+			</div>
+		</div>
+		<div class="clr"></div>
 	</div>
  
     <div class="row-fluid"> 
@@ -52,8 +58,8 @@
 
                 <div>
                         
-                        <div class="heading1">Tin tức &amp; sự kiện</div>
-                        <f:function name="My.Content.NewsList" xmlns:f="http://www.composite.net/ns/function/1.0">
+                          <div class="heading1">Tin tức &amp; sự kiện</div>
+                        <f:function name="My.Content.NewsTop" xmlns:f="http://www.composite.net/ns/function/1.0">
 			<f:param name="NewsDetailPage" value="cb842acc-32ac-427f-a4c0-ae204b20a8b7" />
 		</f:function>
                     </div>

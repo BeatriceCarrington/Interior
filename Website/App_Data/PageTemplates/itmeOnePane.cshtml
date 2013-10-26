@@ -1,0 +1,31 @@
+﻿@inherits RazorPageTemplate
+@functions {
+    public override void Configure()
+    {
+        TemplateId = new Guid("91f65371-7e5d-4d15-b076-d2909e968694");
+        TemplateTitle = "[itme]OnePane";
+        Layout = "ItmeMaster.cshtml";
+    }
+
+    [Placeholder(Id = "Content", Title = "Content")]
+    public XhtmlDocument Content { get; set; } 
+ 
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    @*you can add template specific head elements here*@
+<script src="~/Itme/colorbox/jquery.colorbox-min.js"></script>
+    <link href="~/Itme/colorbox/colorbox.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        $(document).ready(function () { 
+            $(".item").colorbox({ rel: 'group4',  photo: true });
+        });
+    </script>
+</head>
+<body>
+    <div class="row-fluid"> 
+        @Markup(Content)     
+	</div> 
+</body>
+</html>

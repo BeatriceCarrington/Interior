@@ -1,0 +1,43 @@
+﻿20131026 09:48:20.0852 2 69 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 09:48:20:08 in process 5968
+20131026 13:07:19.5071 3 58 Information MimeTypeInfo  Uploading file 'Memo_20130330_155827_02.jpg'. MIME type from extension: 'image/jpeg'
+20131026 14:38:53.0783 3 69 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 14:38:53:07 in process 5968
+20131026 14:38:55.3115 4 62 Warning ConsoleMessageServiceFacade  Console 'key9199055813132416' has a last known change numer of 21, but server current number is 1.
+20131026 14:38:55.4445 4 63 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 14:38:55:44 in process 5968
+20131026 15:23:06.4501 5 10 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 15:23:06:45 in process 5968
+20131026 15:23:18.8938 6 66 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 15:23:18:89 in process 5968
+20131026 15:24:40.4215 7 41 Critical HookingFacade  System.InvalidOperationException: Multiple master page templates defined with the same ID '91f65371-7e5d-4d15-b076-d2909e968692'
+   at Composite.Verify.ThrowInvalidOperationException(String message, Object[] formatArguments)
+   at Composite.Plugins.PageTemplates.Razor.RazorPageTemplateProvider.Initialize()
+   at Composite.Plugins.PageTemplates.Razor.RazorPageTemplateProvider.GetInitializedState()
+   at Composite.Plugins.PageTemplates.Razor.RazorPageTemplateProvider.GetPageTemplates()
+   at Composite.Core.PageTemplates.PageTemplateFacade.GetPageTemplates()
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.PageTemplateElementProvider.GetRoots(SearchToken searchToken)
+   at Composite.C1Console.Elements.Foundation.PluginFacades.ElementProviderPluginFacade.GetRoots(String providerName, SearchToken seachToken)
+   at Composite.C1Console.Elements.ElementFacade.GetRoots(String providerName, SearchToken searchToken, Boolean performSecurityCheck, Boolean useForeign)
+   at Composite.C1Console.Elements.ElementFacade.GetRootsWithNoSecurity(ElementProviderHandle elementProviderHandle, SearchToken searchToken)
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.CreateHooks(String parentId, IEnumerable`1 elements, List`1 foundHooks)
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.CreateHooks(String parentId, IEnumerable`1 elements, List`1 foundHooks)
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.get_CurrentEntityTokenHooks()
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.GetHooks()
+   at Composite.C1Console.Elements.Foundation.PluginFacades.ElementProviderPluginFacade.GetHooks(String providerName)
+   at Composite.C1Console.Elements.ElementHookRegistratorFacade.GetHooks()
+   at Composite.Plugins.Security.HookRegistrators.ElementHookRegistrator.ElementHookRegistrator.GetHooks()
+   at Composite.C1Console.Security.Foundation.PluginFacades.HookRegistratorPluginFacade.GetHooks(String pluginName)
+   at Composite.C1Console.Security.HookingFacadeImpl.DoInitialize()
+   at Composite.C1Console.Security.HookingFacadeImpl.EnsureInitialization()
+   at Composite.C1Console.Security.HookingFacadeImpl.GetHookies(EntityToken hook)
+   at Composite.C1Console.Security.HookingFacade.GetHookies(EntityToken hooker)
+
+20131026 15:24:40.4275 7 41 Warning GlobalInitializerFacade RGB(194, 252, 131) Unhandled error occured, reinitializing the system!
+20131026 15:24:41.3645 7 66 Critical HookingFacade  System.InvalidOperationException: Multiple master page templates defined with the same ID '91f65371-7e5d-4d15-b076-d2909e968692'
+   at Composite.Verify.ThrowInvalidOperationException(String message, Object[] formatArguments)
+   at Composite.Plugins.PageTemplates.Razor.RazorPageTemplateProvider.Initialize()
+   at Composite.Plugins.PageTemplates.Razor.RazorPageTemplateProvider.GetInitializedState()
+   at Composite.Plugins.PageTemplates.Razor.RazorPageTemplateProvider.GetPageTemplates()
+   at Composite.Core.PageTemplates.PageTemplateFacade.GetPageTemplates()
+   at Composite.Plugins.Elements.ElementProviders.PageTemplateElementProvider.PageTemplateElementProvider.GetRoots(SearchToken searchToken)
+   at Composite.C1Console.Elements.Foundation.PluginFacades.ElementProviderPluginFacade.GetRoots(String providerName, SearchToken seachToken)
+   at Composite.C1Console.Elements.ElementFacade.GetRoots(String providerName, SearchToken searchToken, Boolean performSecurityCheck, Boolean useForeign)
+   at Composite.C1Console.Elements.ElementFacade.GetRootsWithNoSecurity(ElementProviderHandle elementProviderHandle, SearchToken searchToken)
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.CreateHooks(String parentId, IEnumerable`1 elements, List`1 foundHooks)
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementPro
