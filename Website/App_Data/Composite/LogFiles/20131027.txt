@@ -1,0 +1,12 @@
+﻿20131027 00:06:45.3502 7 60 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131027 00:17:41.4617 7 26 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131027 00:21:22.6113 7 36 Information MimeTypeInfo  Uploading file 'kimxongxuoi_fix.jpg'. MIME type from extension: 'image/jpeg'
+20131027 00:21:57.3143 7 13 Information MimeTypeInfo  Uploading file 'NamAn_design.jpg'. MIME type from extension: 'image/jpeg'
+20131027 00:22:08.2349 7 39 Information MimeTypeInfo  Uploading file 'simple_img_1.jpg'. MIME type from extension: 'image/jpeg'
+20131027 00:22:17.2545 7 36 Information MimeTypeInfo  Uploading file 'simple_img_2.jpg'. MIME type from extension: 'image/jpeg'
+20131027 00:22:27.4310 7 62 Information MimeTypeInfo  Uploading file 'simple_img_3.jpg'. MIME type from extension: 'image/jpeg'
+20131027 00:34:41.7110 7 33 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131027 00:35:12.0258 7 50 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 00:35:12:02 in process 5968

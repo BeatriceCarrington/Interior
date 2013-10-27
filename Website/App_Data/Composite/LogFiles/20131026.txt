@@ -40,4 +40,26 @@
    at Composite.C1Console.Elements.ElementFacade.GetRoots(String providerName, SearchToken searchToken, Boolean performSecurityCheck, Boolean useForeign)
    at Composite.C1Console.Elements.ElementFacade.GetRootsWithNoSecurity(ElementProviderHandle elementProviderHandle, SearchToken searchToken)
    at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.CreateHooks(String parentId, IEnumerable`1 elements, List`1 foundHooks)
-   at Composite.Plugins.Elements.ElementProviders.VirtualElementPro
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.CreateHooks(String parentId, IEnumerable`1 elements, List`1 foundHooks)
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.get_CurrentEntityTokenHooks()
+   at Composite.Plugins.Elements.ElementProviders.VirtualElementProvider.VirtualElementProvider.GetHooks()
+   at Composite.C1Console.Elements.Foundation.PluginFacades.ElementProviderPluginFacade.GetHooks(String providerName)
+   at Composite.C1Console.Elements.ElementHookRegistratorFacade.GetHooks()
+   at Composite.Plugins.Security.HookRegistrators.ElementHookRegistrator.ElementHookRegistrator.GetHooks()
+   at Composite.C1Console.Security.Foundation.PluginFacades.HookRegistratorPluginFacade.GetHooks(String pluginName)
+   at Composite.C1Console.Security.HookingFacadeImpl.DoInitialize()
+   at Composite.C1Console.Security.HookingFacadeImpl.EnsureInitialization()
+   at Composite.C1Console.Security.HookingFacadeImpl.GetHookies(EntityToken hook)
+   at Composite.C1Console.Security.HookingFacade.GetHookies(EntityToken hooker)
+
+20131026 15:24:41.3655 7 66 Warning GlobalInitializerFacade RGB(194, 252, 131) Unhandled error occured, reinitializing the system!
+20131026 19:36:00.5490 7 26 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131026 19:36:13.6478 7 31 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131026 19:38:54.8880 7 27 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131026 21:10:45.1281 7 27 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
+20131026 23:52:33.5684 7 33 Warning LocalC1FileSystemWatcher  System.IO.InternalBufferOverflowException: Too many changes at once in directory:D:\itme\interior\Website\.
+
