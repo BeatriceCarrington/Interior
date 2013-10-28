@@ -1,0 +1,154 @@
+﻿20131028 20:00:52.9457 2 36 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 20:00:52:94 in process 7712
+20131028 20:01:48.7969 2  5 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 20:01:48:79 in process 1876
+20131028 20:04:12.5471 3 10 Critical XmlDataProvider  Failed to save data to the file file:D:\itme\interior\Website\App_Data\Composite\DataStores\Composite.Data.Types.IUserConsoleInformation_Published.xml
+20131028 20:04:12.7381 3 10 Critical XmlDataProvider  System.NotSupportedException: FileStream was asked to open a device that was not a file. For support for devices like 'com1:' or 'lpt1:', call CreateFile, then use the FileStream constructors that take an OS handle as an IntPtr.
+   at Microsoft.Win32.Win32Native.SafeCreateFile(String lpFileName, Int32 dwDesiredAccess, FileShare dwShareMode, SECURITY_ATTRIBUTES securityAttrs, FileMode dwCreationDisposition, Int32 dwFlagsAndAttributes, IntPtr hTemplateFile)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, Boolean useAsync)
+   at System.Xml.XmlWriterSettings.CreateWriter(String outputFileName)
+   at System.Xml.XmlWriter.Create(String outputFileName, XmlWriterSettings settings)
+   at Composite.Plugins.Data.DataProviders.XmlDataProvider.Foundation.XmlDataProviderDocumentWriter.DoSave(FileRecord fileRecord)
+
+20131028 20:04:12.7401 3 10 Error XmlDataProvider  System.NotSupportedException: FileStream was asked to open a device that was not a file. For support for devices like 'com1:' or 'lpt1:', call CreateFile, then use the FileStream constructors that take an OS handle as an IntPtr.
+   at Composite.Plugins.Data.DataProviders.XmlDataProvider.Foundation.XmlDataProviderDocumentWriter.DoSave(FileRecord fileRecord)
+   at Composite.Plugins.Data.DataProviders.XmlDataProvider.Foundation.XmlDataProviderDocumentWriter.Flush()
+20131028 20:10:16.1689 3 44 Error FileBasedFunctionProvider  Error instantiating ProjectVMenu function
+20131028 20:10:16.1809 3 44 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): d:\itme\interior\Website\App_Data\Razor\Itme\ProjectVMenu.cshtml(27): error CS1579: foreach statement cannot operate on variables of type 'Composite.Data.PageNode' because 'Composite.Data.PageNode' does not contain a public definition for 'GetEnumerator'
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20131028 20:10:16.1909 3 37 Error FileBasedFunctionProvider  Error instantiating ProjectVMenu function
+20131028 20:10:16.2039 3 37 Error FileBasedFunctionProvider  System.Web.HttpCompileException (0x80004005): d:\itme\interior\Website\App_Data\Razor\Itme\ProjectVMenu.cshtml(27): error CS1579: foreach statement cannot operate on variables of type 'Composite.Data.PageNode' because 'Composite.Data.PageNode' does not contain a public definition for 'GetEnumerator'
+   at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20131028 20:10:19.6461 3 34 Error PageRenderer  Failed to execute function: Itme.ProjectVMenu
+20131028 20:10:19.6481 3 34 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Itme.ProjectVMenu' ---> System.Web.HttpCompileException: d:\itme\interior\Website\App_Data\Razor\Itme\ProjectVMenu.cshtml(27): error CS1579: foreach statement cannot operate on variables of type 'Composite.Data.PageNode' because 'Composite.Data.PageNode' does not contain a public definition for 'GetEnumerator'
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20131028 20:10:19.6531 3 34 Error PageRenderer | INNER  System.Web.HttpCompileException (0x80004005): d:\itme\interior\Website\App_Data\Razor\Itme\ProjectVMenu.cshtml(27): error CS1579: foreach statement cannot operate on variables of type 'Composite.Data.PageNode' because 'Composite.Data.PageNode' does not contain a public definition for 'GetEnumerator'
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20131028 20:23:20.3998 3 36 Error FunctionWrapper  Failed to execute function: Itme.ProjectVMenu
+20131028 20:23:20.4568 3 36 Error FunctionWrapper  System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_App_Data_Razor_Itme_ProjectVMenu_cshtml.Execute() in d:\itme\interior\Website\App_Data\Razor\Itme\ProjectVMenu.cshtml:line 16
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorBasedFunction.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20131028 20:30:32.9335 3 42 Error FileBasedFunctionProvider  Error instantiating ProjectVMenu function
+20131028 20:30:32.9355 3 42 Error FileBasedFunctionProvider  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "DuAn".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   at System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(String virtualPath, Type requiredBaseType)
+   at System.Web.WebPages.BuildManagerWrapper.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryManager.CreateInstanceOfType[T](String virtualPath)
+   at System.Web.WebPages.VirtualPathFactoryExtensions.CreateInstance[T](IVirtualPathFactory factory, String virtualPath)
+   at System.Web.WebPages.WebPageBase.CreateInstanceFromVirtualPath(String virtualPath, IVirtualPathFactory virtualPathFactory)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorFunctionProvider.InstantiateFunction(String virtualPath, String namespace, String name)
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.FileBasedFunctionProvider`1.get_Functions()
+20131028 20:30:40.1679 3 13 Error PageRenderer  Failed to execute function: Itme.ProjectVMenu
+20131028 20:30:40.1699 3 13 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Itme.ProjectVMenu' ---> System.Web.HttpParseException: Expected a "{" but found a "DuAn".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   --- End of inner exception stack trace ---
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20131028 20:30:40.1709 3 13 Error PageRenderer | INNER  System.Web.HttpParseException (0x80004005): Expected a "{" but found a "DuAn".  Block statements must be enclosed in "{" and "}".  You cannot use single-statement control-flow statements in CSHTML pages. For example, the following is not allowed:
+
+@if(isLoggedIn)
+    <p>Hello, @user</p>
+
+Instead, wrap the contents of the block in "{}":
+
+@if(isLoggedIn) {
+    <p>Hello, @user</p>
+}
+
+   at Composite.Plugins.Functions.FunctionProviders.FileBasedFunctionProvider.NotLoadedFileBasedFunction`1.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20131028 20:31:05.1973 3 21 Error PageRenderer  Failed to execute function: Itme.ProjectVMenu
+20131028 20:31:05.1993 3 21 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Itme.ProjectVMenu' 
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20131028 20:31:05.2023 3 21 Error PageRenderer | INNER  System.ArgumentException: Missing parameter 'RootMenu' (type of Composite.Data.DataReference`1[[Composite.Data.Types.IPage, Composite, Version=4.0.4897.31550, Culture=neutral, PublicKeyToken=null]])
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20131028 20:31:37.9722 3 28 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 20:31:37:97 in process 1876
+20131028 20:31:40.1443 4 36 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 20:31:40:14 in process 1876
+20131028 20:32:02.8746 5 36 Error PageRenderer  Failed to execute function: Itme.ProjectVMenu
+20131028 20:32:02.8846 5 36 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Itme.ProjectVMenu' 
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20131028 20:32:02.8846 5 36 Error PageRenderer | INNER  System.ArgumentException: Missing parameter 'RootMenu' (type of Composite.Data.DataReference`1[[Composite.Data.Types.IPage, Composite, Version=4.0.4897.31550, Culture=neutral, PublicKeyToken=null]])
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20131028 20:32:55.5657 5 21 Error PageRenderer  Failed to execute function: Itme.ProjectVMenu
+20131028 20:32:55.5667 5 21 Error PageRenderer  System.InvalidOperationException: Failed to get value for function 'Itme.ProjectVMenu' 
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Core.WebClient.Renderings.Page.PageRenderer.<>c__DisplayClass19.<ExecuteEmbeddedFunctions>b__15(Int32 i)
+20131028 20:32:55.5677 5 21 Error PageRenderer | INNER  System.ArgumentException: Missing parameter 'RootMenu' (type of Composite.Data.DataReference`1[[Composite.Data.Types.IPage, Composite, Version=4.0.4897.31550, Culture=neutral, PublicKeyToken=null]])
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20131028 23:40:24.0480 5 16 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 23:40:24:04 in process 1876

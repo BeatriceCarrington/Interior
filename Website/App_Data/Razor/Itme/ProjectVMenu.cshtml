@@ -1,0 +1,53 @@
+﻿@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get { return "A demo function that outputs a hello message."; }
+    }
+
+    [FunctionParameter(DefaultValue = "World")]
+    public string Name { get; set; }
+
+    [FunctionParameter(Label = "RootMenu")]
+    public DataReference<IPage> RootMenu { get; set; }
+    
+}
+
+@{
+    var pagenodes = Sitemap.CurrentHomePageNode.GetPageNodes(SitemapScope.Level2AndSiblings).ToList();
+    var DuAn = pagenodes.Find(a => a.Id ==RootMenu.Data.Id);
+    if(DuAn==null)
+    {DuAn = pagenodes.Find(a => a.Id == CurrentPageNode.ParentPage.Id);
+    }    
+    var DuAnNode=DuAn.GetPageNodes(SitemapScope.Level3AndSiblings);
+    if (!pagenodes.Any()) { return; }
+}
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+<head>
+</head>
+<body> 
+        <ul class="nav nav-list"> 
+            @{  string active = "";
+            
+            } 
+
+            @foreach (var page in DuAnNode)
+            {
+                if (!string.IsNullOrEmpty(page.MenuTitle))
+                {
+                    active = "";
+                    if (CurrentPageNode.Url == page.Url)
+                    { active = "active"; }
+                <li class="@active">
+                    <a href="@page.Url" ><span>@page.MenuTitle</span></a>
+                </li>
+                }
+            }
+
+
+        </ul> 
+
+
+</body>
+</html>
