@@ -1107,14 +1107,13 @@ ul#news_ticker a{
 	float:left  ;
 }
 .introduction_image
-{	width:290px;
-	height:338px;
+{	 
 	margin:3px;
 }
 .introduction_text
 {   
     float:right;
-    width:390px;
+    width:500px;
  
 }
 .our_mission{
