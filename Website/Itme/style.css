@@ -19,7 +19,7 @@ html { padding:0; margin:0;}
 .search form .keywords { line-height:14px; float:left; border:0; width:138px; padding:9px 0; height:15px; background:none; margin:0; font:normal 14px Arial, Helvetica, sans-serif; color:#9c9c9c;}
 .search form .button { float:left; margin:0; padding:0;}
 /* menu */	
-.menu { float:right; padding:13px 0 0 0; margin:0; width:380px;margin-top:-19px}
+.menu { float:right; padding:13px 0 0 0; margin:0; margin-top:-19px}
 .menu ul {  padding:0; margin:0; list-style:none; border:0;}
 .menu ul li { float:left; margin:0; padding:0 1px; border:0;}
 .menu ul li a { float:left; margin:0; padding:13px 0; color:#434343; font:normal 12px Arial, Helvetica, sans-serif; text-decoration:none;}
@@ -101,5 +101,7 @@ li.bg, .bg { clear:both; border-top:1px solid #ddd; padding:0; margin:10px 0; ba
 }
  .container960 {
             width: 960px;
-            margin: 0px auto;
+            margin: 0 auto;
+            margin-top:10px;
+
         }

@@ -21,38 +21,38 @@
 
 
 
-<div class="menu">
-                            <ul>
-                             
-                         
+    <div class="menu">
+        <ul>
 
-                          
-                @{  string active = "";
-                    if (CurrentPageNode.Url == @HomePageNode.Url)
-                    { active = "active"; }
-                        }
-                <li >
-                    <a href="@HomePageNode.Url" class="@active"><span>@HomePageNode.MenuTitle</span></a>
-                </li>
 
-                @foreach (var page in pagenodes)
+
+
+            @{  string active = "";
+                if (CurrentPageNode.Url == @HomePageNode.Url)
+                { active = "active"; }
+            }
+            <li>
+                <a href="@HomePageNode.Url" class="@active"><span>@HomePageNode.MenuTitle</span></a>
+            </li>
+
+            @foreach (var page in pagenodes)
+            {
+                if (!string.IsNullOrEmpty(page.MenuTitle))
                 {
-                    if (!string.IsNullOrEmpty(page.MenuTitle))
-                    {
-                        active = "";
-                        if (CurrentPageNode.Url == page.Url)
-                        { active = "active"; }
-                    <li>
-                        <a href="@page.Url" class="@active"><span>@page.MenuTitle</span></a>
-                    </li>
-                    }
+                    active = "";
+                    if (CurrentPageNode.Url == page.Url)
+                    { active = "active"; }
+                <li>
+                    <a href="@page.Url" class="@active"><span>@page.MenuTitle</span></a>
+                </li>
                 }
+            }
 
 
-            </ul>
-        </div>
-    
-     <div class="clr"></div>
+        </ul>
+    </div>
+
+    <div class="clr"></div>
 
 
 
