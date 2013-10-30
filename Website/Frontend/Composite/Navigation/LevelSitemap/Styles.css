@@ -21,7 +21,7 @@ div#LevelSitemap .mainarea25 {
 
 
 div#LevelSitemap ul ul {
-  margin-left: 0.8em;
+  
 }
 
 div#LevelSitemap ul li {
@@ -30,6 +30,7 @@ div#LevelSitemap ul li {
 
 div#LevelSitemap a {
   text-decoration: none;
+  font-weight:bold;
 }
 
 div#LevelSitemap a.NavigationSelected {

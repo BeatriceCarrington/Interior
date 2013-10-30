@@ -200,22 +200,7 @@ li.drawer {
 	border-top:1px dotted #666;	
 	margin-top:5px;
 }
-.footer{
-	background-image:url(images/footer_bg.jpg);
-	background-repeat:repeat-x;
-	background-position:top;	
-	margin:0px;
-	padding:0px;
-}
-.footer .footer_body{
-	width:960px;
-	margin:0px auto;
-	padding-top:12px;
-	background-image:url(images/footer_body_bg.jpg);
-	background-position:bottom right;
-	background-repeat:no-repeat;
-	height:240px;
-}
+ 
 .footer .footer_body .box{
 	float:left;
 	padding-right:23px;
