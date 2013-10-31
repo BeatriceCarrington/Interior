@@ -40,7 +40,7 @@
                 if (!string.IsNullOrEmpty(page.MenuTitle))
                 {
                     active = "";
-                    if (CurrentPageNode.Url == page.Url)
+                    if (CurrentPageNode.Url == page.Url || (CurrentPageNode.ParentPage!=null&&CurrentPageNode.ParentPage.Url == page.Url))
                     { active = "active"; }
                 <li>
                     <a href="@page.Url" class="@active"><span>@page.MenuTitle</span></a>

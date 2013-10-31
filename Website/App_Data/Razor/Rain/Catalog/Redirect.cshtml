@@ -1,0 +1,28 @@
+﻿@inherits RazorFunction
+
+@functions {
+    public override string FunctionDescription
+    {
+        get  { return "A demo function that outputs a hello message."; }
+    }
+     
+    [FunctionParameter(DefaultValue = "World")]
+    public string Name { get; set; }
+
+    [FunctionParameter(Label = "Redirect to Page")]
+    public DataReference<IPage> RPage { get; set; }
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://www.composite.net/ns/function/1.0">
+    <head>
+    </head>
+    <body>
+        <div>
+            Hello @Name!
+			@{ 
+                Response.Redirect(Html.C1().PageUrl(RPage.Data).ToString());
+       
+       }
+        </div>
+    </body>
+</html>

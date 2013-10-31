@@ -47,7 +47,7 @@ html { padding:0; margin:0;}
 /*top_sup*/
 .top_sup { padding:0 0 30px 0; margin:0; background:#efefef;}
 .top_sup_resize { width:960px; border-top:1px solid #d6d6d6; margin:0 auto; padding:0;}
-.top_sup_resize img { float:left; margin:5px 10px; padding:0;}
+.top_sup_resize img { float:left; margin:5px 10px; padding-bottom:5px;}
 .top_sup_resize p { font: normal 11px Arial, Helvetica, sans-serif; color:#5f5f5f; padding:5px; margin:0; line-height:1.8em;}
 .top_sup_resize strong { color:#2e2e2e;}
 .top_sup_resize .blogga { width:230px; float:left; margin:0 2px; padding:2px; border-right:1px solid #d6d6d6;}
@@ -92,12 +92,10 @@ li.bg, .bg { clear:both; border-top:1px solid #ddd; padding:0; margin:10px 0; ba
 
 
 
-.heading1 {
-   
+.heading1 {   
     font-size:19px;
-    padding:10px 0 10px 0;
-    font-weight:bold;
-    line-height:40px;
+    padding-bottom:10px;
+    font-weight:bold; 
 }
  .container960 {
             width: 960px;
