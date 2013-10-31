@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XsltFunctionElementsElements>
+  <XsltFunctionElements Id="1c5a4f2d-ea8b-48be-988f-c5953df04573" Name="GoogleMaps" Namespace="Composite.Web.Maps" Description="Shows a map for an address or the latitude/longitude using Google Maps" OutputXmlSubType="XHTML" XslFilePath="\Composite\Web\Maps\GoogleMaps.xsl" />
+  <XsltFunctionElements Id="7ae4551c-3256-4508-b4a4-1dded0d992bc" Name="LikeBox" Namespace="Composite.Community.Facebook" Description="Adds the Facebook Like Box to a web page." OutputXmlSubType="XHTML" XslFilePath="\Composite\Community\Facebook\LikeBox.xsl" />
   <XsltFunctionElements Id="afa9e021-bed7-4ed8-90c5-d4d722dd8531" Name="ContactForm" Namespace="Composite.Forms" Description="Adds a form to a page for visitors to contact and send messages to website owners." OutputXmlSubType="XHTML" XslFilePath="\Composite\Forms\ContactForm.xsl" />
+  <XsltFunctionElements Id="bd7eb08f-9d5f-40f1-8d10-983626de4ab9" Name="LikeButton" Namespace="Composite.Community.Facebook" Description="Adds the Like button to a page for users to share content with their Facebook friends." OutputXmlSubType="XHTML" XslFilePath="\Composite\Community\Facebook\LikeButton.xsl" />
 </XsltFunctionElementsElements>

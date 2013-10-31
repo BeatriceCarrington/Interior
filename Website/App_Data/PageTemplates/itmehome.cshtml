@@ -9,7 +9,7 @@
 
     [Placeholder(Id = "Top", Title = "Top")]
     public XhtmlDocument Top { get; set; }
-	  [Placeholder(Id = "Top2", Title = "Top2")]
+    [Placeholder(Id = "Top2", Title = "Top2")]
     public XhtmlDocument Top2 { get; set; }
 
     [Placeholder(Id = "Left", Title = "Left", IsDefault = true)]
@@ -28,12 +28,12 @@
         @Markup(Top)
 
     </div>
-	 <div class="row-fluid"> 
+    <div class="row-fluid">
         <div class="container960">
-			 @Markup(Top2)
-		 </div>
-	</div>
-    <div class="row-fluid"> 
+            @Markup(Top2)
+        </div>
+    </div>
+    <div class="row-fluid">
         <div class="container960">
             <div class="span8">
                 @Markup(Left)
@@ -42,12 +42,18 @@
                 @Markup(Right)
 
                 <div>
-                        
-                        <div class="heading1">Tin tức &amp; sự kiện</div>
-                        <f:function name="My.Content.NewsTop" xmlns:f="http://www.composite.net/ns/function/1.0">
+
+                    <div class="heading1">Tin tức &amp; sự kiện</div>
+                    <f:function name="My.Content.NewsTop" xmlns:f="http://www.composite.net/ns/function/1.0">
 			<f:param name="NewsDetailPage" value="cb842acc-32ac-427f-a4c0-ae204b20a8b7" />
 		</f:function>
-                    </div>
+
+                </div>
+                <div>
+                    <f:function name="Composite.Community.Facebook.LikeBox" xmlns:f="http://www.composite.net/ns/function/1.0">
+					<f:param name="URL" value="https://www.facebook.com/itsthehappypage" />
+				</f:function>
+                </div>
             </div>
         </div>
     </div>

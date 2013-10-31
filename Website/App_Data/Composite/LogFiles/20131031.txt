@@ -1,1 +1,16 @@
 ﻿20131031 06:30:31.7705 2 19 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 06:30:31:76 in process 7656
+20131031 12:44:25.1711 2 36 Error FunctionWrapper  Failed to execute function: Rain.Menu
+20131031 12:44:25.1791 2 36 Error FunctionWrapper  System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP._Page_App_Data_Razor_Rain_Menu_cshtml.Execute() in f:\GitHubApp\Interior\Website\App_Data\Razor\Rain\Menu.cshtml:line 43
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy(IEnumerable`1 executors)
+   at System.Web.WebPages.WebPage.ExecutePageHierarchy()
+   at System.Web.WebPages.WebPageBase.ExecutePageHierarchy(WebPageContext pageContext, TextWriter writer, WebPageRenderingBase startPage)
+   at Composite.AspNet.Razor.RazorHelper.ExecuteRazorPage(String virtualPath, Action`1 setParameters, Type resultType, FunctionContextContainer functionContextContainer)
+   at Composite.Plugins.Functions.FunctionProviders.RazorFunctionProvider.RazorBasedFunction.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+20131031 13:00:36.0420 2 25 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 13:00:36:04 in process 4564
+20131031 13:01:23.8891 3 34 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 13:01:23:88 in process 4564
+20131031 13:20:36.6404 4 29 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 13:20:36:64 in process 4564
+20131031 14:20:34.7964 5 40 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 14:20:34:79 in process 4564
+20131031 14:32:51.0327 6 33 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 14:32:51:03 in process 4564
