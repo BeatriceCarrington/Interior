@@ -1,0 +1,6 @@
+﻿20131031 15:12:12.7329 5 104 Warning Authorization  DENIED 192.168.1.117 access to /composite/services/consolemessagequeue/consolemessagequeueservices.asmx
+20131031 15:12:14.6658 5 36 Warning Authorization  DENIED 192.168.1.117 access to /composite/services/consolemessagequeue/consolemessagequeueservices.asmx
+20131031 15:12:19.6748 5 33 Warning Authorization  DENIED 192.168.1.117 access to /composite/services/consolemessagequeue/consolemessagequeueservices.asmx
+20131031 15:12:24.6628 5 25 Warning Authorization  DENIED 192.168.1.117 access to /composite/services/consolemessagequeue/consolemessagequeueservices.asmx
+20131031 15:12:29.7609 5 36 Warning Authorization  DENIED 192.168.1.117 access to /composite/services/consolemessagequeue/consolemessagequeueservices.asmx
+20131031 15:12:32.3414 5  9 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 5 ended at 15:12:32:34 in process 9636

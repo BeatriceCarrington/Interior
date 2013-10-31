@@ -2,4 +2,5 @@
 <MethodBasedFunctionInfoElementsElements>
   <MethodBasedFunctionInfoElements Id="38c67ff5-6d96-49d1-b402-63d34e360d35" Type="Composite.Forms.ContactForm.Functions" MethodName="GetEmbedableFieldsTypes" Namespace="Composite.Forms.ContactForm.Functions" UserMethodName="GetEmbedableFieldsTypes" />
   <MethodBasedFunctionInfoElements Id="d5bf57bc-76b4-4791-8559-024ae4bd22a0" Type="Composite.Forms.ContactForm.Functions" MethodName="Send" Namespace="Composite.Forms.ContactForm.Functions" UserMethodName="Send" />
+  <MethodBasedFunctionInfoElements Id="f345fa9e-a256-4ca2-afda-477074abf13c" Type="Composite.Search.SimplePageSearch.Function" MethodName="GetSearchResult" Namespace="Composite.Search.SimplePageSearch" UserMethodName="GetSearchResult" />
 </MethodBasedFunctionInfoElementsElements>
