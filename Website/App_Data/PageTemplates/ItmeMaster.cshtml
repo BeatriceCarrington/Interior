@@ -43,20 +43,23 @@
         });
     </script>
     <style type="text/css">
-        .gallery {
+        .gallery
+        {
             width: 890px;
             height: 350px;
             margin: 0 auto;
         }
 
-        #slider {
+        #slider
+        {
             margin: 0;
             padding: 0;
             list-style: none;
         }
 
             #slider ul,
-            #slider li {
+            #slider li
+            {
                 margin: 0;
                 padding: 0;
                 list-style: none;
@@ -65,19 +68,22 @@
     define width and height of list item (slide)
     entire slider area will adjust according to the parameters provided here
 */
-            #slider li {
+            #slider li
+            {
                 width: 890px;
                 height: 350px;
                 overflow: hidden;
             }
 
-        p#controls {
+        p#controls
+        {
             margin: 0;
             padding: 0;
             position: relative;
         }
 
-        #prevBtn {
+        #prevBtn
+        {
             display: block;
             margin: 0;
             overflow: hidden;
@@ -88,7 +94,8 @@
             top: -210px;
         }
 
-        #nextBtn {
+        #nextBtn
+        {
             display: block;
             margin: 0;
             overflow: hidden;
@@ -99,21 +106,24 @@
             top: -210px;
         }
 
-        #prevBtn a {
+        #prevBtn a
+        {
             display: block;
             width: 35px;
             height: 75px;
             background: url(/itme/images/l_arrow.gif) no-repeat 0 0;
         }
 
-        #nextBtn a {
+        #nextBtn a
+        {
             display: block;
             width: 35px;
             height: 75px;
             background: url(/itme/images/r_arrow.gif) no-repeat 0 0;
         }
 
-        .container2 {
+        .container2
+        {
             width: 960px;
             margin: 0px auto;
         }
@@ -134,11 +144,12 @@
                             <form id="SearchForm" name="form1" method="get" action="/SearchResult">
                                 <label>
                                     <span>
-                                        <input name="SearchQuery" maxlength="1000" type="text" class="keywords" id="textfield" value="Tìm kiếm..." />
+                                        <input name="SearchQuery" maxlength="1000" type="text" class="keywords" id="textfield" placeholder="Tìm kiếm..."
+                                            value="" />
                                     </span>
                                     <input name="b" type="image" src="/itme/images/search.gif" class="button" />
                                 </label>
-                            </form> 
+                            </form>
 
                         </div>
                         <f:function xmlns:f="http://www.composite.net/ns/function/1.0" name="Rain.Menu" />
@@ -157,9 +168,12 @@
 			<f:param name="Level" value="1" />
 		</f:function>
                         </div>
-                        <p class="leftt">
-                            Copyright © ITME.com. All Rights Reserved<br />
-                        </p>
+                        <div class="clr"></div>
+                        <div>
+                            <p class="leftt">
+                                Copyright © ITME.com. All Rights Reserved<br />
+                            </p>
+                        </div>
                         <div class="clr"></div>
                     </div>
                     <div class="clr"></div>

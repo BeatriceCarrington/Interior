@@ -1139,9 +1139,7 @@ ul#news_ticker a{
 .contact_us_our{
 	margin:10px 0px 25px 0px;
 }
-.logo_image{
-	float:left;
-}
+ 
 .our_address{
 	margin-left:25px;
 	float:left;
@@ -1182,10 +1180,7 @@ ul#news_ticker a{
     background-position:left;
     background-repeat:no-repeat;
 }
-.logo
-{
-    margin-left:30px;
-}
+ 
 .list_packet .box_bottom
 {
 border-top:1px solid #666;
