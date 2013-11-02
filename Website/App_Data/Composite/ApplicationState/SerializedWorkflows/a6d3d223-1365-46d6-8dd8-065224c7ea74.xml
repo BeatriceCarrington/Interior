@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FormData>
+  <ContainerLabel value="Giới thiệu" />
+  <FormDefinition value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;cms:formdefinition xmlns=&quot;http://www.composite.net/ns/management/bindingforms/std.ui.controls.lib/1.0&quot; xmlns:internal=&quot;http://www.composite.net/ns/management/bindingforms/internal.ui.controls.lib/1.0&quot; xmlns:f=&quot;http://www.composite.net/ns/management/bindingforms/std.function.lib/1.0&quot; xmlns:cms=&quot;http://www.composite.net/ns/management/bindingforms/1.0&quot;&gt;&#xD;&#xA;&#x9;&lt;cms:bindings&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;SelectedPage&quot; type=&quot;Composite.Data.Types.IPage&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;SelectablePageTypeIds&quot; type=&quot;System.Collections.IEnumerable&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;SelectableTemplateIds&quot; type=&quot;System.Collections.IEnumerable&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;PublishDate&quot; type=&quot;System.Object&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;UnpublishDate&quot; type=&quot;System.Object&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;StateOptions&quot; type=&quot;System.Object&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;NamedXhtmlFragments&quot; type=&quot;System.Object&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;PreviewEventHandler&quot; type=&quot;System.EventHandler&quot; optional=&quot;true&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;CustomEvent01Handler&quot; type=&quot;System.EventHandler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&lt;cms:binding name=&quot;UrlTitleIsRequired&quot; type=&quot;System.Boolean&quot; /&gt;&#xD;&#xA;&#x9;&lt;/cms:bindings&gt;&#xD;&#xA;&#x9;&lt;cms:layout iconhandle=&quot;page-edit-page&quot;&gt;&#xD;&#xA;&#x9;&#x9;&lt;TabPanels PreSelectedIndex=&quot;1&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;TabPanels.Label&gt;&#xD;&#xA;        &lt;f:NullCheck&gt;&#xD;&#xA;          &lt;f:NullCheck.CheckValue&gt;&#xD;&#xA;            &lt;cms:read source=&quot;SelectedPage.MenuTitle&quot; /&gt;&#xD;&#xA;          &lt;/f:NullCheck.CheckValue&gt;&#xD;&#xA;          &lt;f:NullCheck.WhenNull&gt;&#xD;&#xA;            &lt;cms:read source=&quot;SelectedPage.Title&quot; /&gt;&#xD;&#xA;          &lt;/f:NullCheck.WhenNull&gt;&#xD;&#xA;          &lt;f:NullCheck.WhenNotNull&gt;&#xD;&#xA;            &lt;cms:read source=&quot;SelectedPage.MenuTitle&quot; /&gt;&#xD;&#xA;          &lt;/f:NullCheck.WhenNotNull&gt;&#xD;&#xA;        &lt;/f:NullCheck&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/TabPanels.Label&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;PlaceHolder Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPaneSettings}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;FieldGroup Label=&quot;${Composite.Plugins.PageElementProvider, GeneralSettings.FieldGroupLabel}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPageTitle}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPageTitleHelp}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.Title&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextArea Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelAbstract}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelAbstractHelp}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextArea.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.Description&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextArea.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextArea&gt;&#xD;&#xA;&#xD;&#xA;          &lt;KeySelector OptionsKeyField=&quot;Key&quot; OptionsLabelField=&quot;Value&quot; Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.PageTypeSelectorLabel}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.PageTypeSelectorHelp}&quot;&gt;&#xD;&#xA;            &lt;KeySelector.SelectedIndexChangedEventHandler&gt;&#xD;&#xA;              &lt;cms:read source=&quot;CustomEvent01Handler&quot; /&gt;&#xD;&#xA;            &lt;/KeySelector.SelectedIndexChangedEventHandler&gt;&#xD;&#xA;            &lt;KeySelector.Options&gt;&#xD;&#xA;              &lt;cms:read source=&quot;SelectablePageTypeIds&quot; /&gt;&#xD;&#xA;            &lt;/KeySelector.Options&gt;&#xD;&#xA;            &lt;KeySelector.Selected&gt;&#xD;&#xA;              &lt;cms:bind source=&quot;SelectedPage.PageTypeId&quot; /&gt;&#xD;&#xA;            &lt;/KeySelector.Selected&gt;&#xD;&#xA;          &lt;/KeySelector&gt;&#xD;&#xA;          &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/FieldGroup&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;FieldGroup Label=&quot;${Composite.Plugins.PageElementProvider, PublicationSettings.FieldGroupLabel}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;KeySelector OptionsKeyField=&quot;Key&quot; OptionsLabelField=&quot;Value&quot; Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPublicationState}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpPublicationState}&quot; Required=&quot;true&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;KeySelector.Selected&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.PublicationStatus&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/KeySelector.Selected&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;KeySelector.Options&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;StateOptions&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/KeySelector.Options&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/KeySelector&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;DateTimeSelector Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPublishDate}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpPublishDate}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;PublishDate&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/DateTimeSelector&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;DateTimeSelector Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelUnpublishDate}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpUnpublishDate}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;UnpublishDate&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/DateTimeSelector&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/FieldGroup&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;FieldGroup Label=&quot;${Composite.Plugins.PageElementProvider, AdvancedSettings.FieldGroupLabel}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelMenuTitle}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpMenuTitle}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.MenuTitle&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelUrlTitle}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpUrlTitle}&quot; SpellCheck=&quot;false&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Required&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;UrlTitleIsRequired&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Required&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.UrlTitle&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelFriendlyUrl}&quot; Help=&quot;${Composite.Plugins.PageElementProvider, EditPage.HelpFriendlyUrl}&quot; SpellCheck=&quot;false&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:bind source=&quot;SelectedPage.FriendlyUrl&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox.Text&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/TextBox&gt;&#x9;&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/FieldGroup&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/PlaceHolder&gt;&#xD;&#xA;      &#xD;&#xA;&#x9;&#x9;&#x9;&lt;internal:PageContentEditor Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelContent}&quot;&gt;&#xD;&#xA;        &lt;internal:PageContentEditor.TemplateId&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;SelectedPage.TemplateId&quot; /&gt;&#xD;&#xA;        &lt;/internal:PageContentEditor.TemplateId&gt;&#xD;&#xA;        &lt;internal:PageContentEditor.SelectableTemplateIds&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;SelectableTemplateIds&quot; /&gt;&#xD;&#xA;        &lt;/internal:PageContentEditor.SelectableTemplateIds&gt;&#xD;&#xA;        &lt;internal:PageContentEditor.NamedXhtmlFragments&gt;&#xD;&#xA;          &lt;cms:bind source=&quot;NamedXhtmlFragments&quot; /&gt;&#xD;&#xA;        &lt;/internal:PageContentEditor.NamedXhtmlFragments&gt;&#xD;&#xA;      &lt;/internal:PageContentEditor&gt;&#xD;&#xA;      &#xD;&#xA;&#x9;&#x9;&#x9;&lt;f:NullCheck&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;f:NullCheck.CheckValue&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;PreviewEventHandler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/f:NullCheck.CheckValue&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;f:NullCheck.WhenNotNull&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;internal:PreviewPanel Label=&quot;${Composite.Plugins.PageElementProvider, EditPage.LabelPreview}&quot;&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;internal:PreviewPanel.ClickEventHandler&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;cms:read source=&quot;PreviewEventHandler&quot; /&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/internal:PreviewPanel.ClickEventHandler&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;/internal:PreviewPanel&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/f:NullCheck.WhenNotNull&gt;&#xD;&#xA;&#x9;&#x9;&#x9;&lt;/f:NullCheck&gt;&#xD;&#xA;&#x9;&#x9;&lt;/TabPanels&gt;&#xD;&#xA;&#x9;&lt;/cms:layout&gt;&#xD;&#xA;&lt;/cms:formdefinition&gt;" />
+  <CustomToolbarDefinition />
+  <ContainerType>
+    <SerializerHandler value="SerializerHandlerType='Composite\.C1Console\.Actions\.StandardUiContainerTypesSerializerHandler,Composite'SerializedObject='Document'" />
+  </ContainerType>
+  <Bindings>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="SelectedPage" />
+        </Key>
+        <Value>
+          <SerializerHandler value="SerializerHandlerType='Composite\.Data\.DataSerializerHandler,Composite'SerializedObject='_IsNew_=\'False\'_DataSourceId_=\'_dataId_=\\\'Id=\\\\\\\'d35972db-c9df-46db-93ff-1081d96e74e9\\\\\\\'\\\'_dataIdType_=\\\'CompositeGenerated\\\\\\\.DynamicXmlDataProvider\\\\\\\.Composite_Data_Types_IPageDataId\\\'_interfaceType_=\\\'Composite\\\\\\\.Data\\\\\\\.Types\\\\\\\.IPage,Composite\\\'_dataScope_=\\\'administrated\\\'_localeScope_=\\\'en-US\\\'\'Id=\'d35972db-c9df-46db-93ff-1081d96e74e9\'TemplateId=\'91f65371-7e5d-4d15-b076-d2909e968694\'PageTypeId=\'f7869eb2-7369-4eb2-af47-e3be261e92c7\'Title=\'Giới\\\ thiệu\'MenuTitle=\'Giới\\\ thiệu\'UrlTitle=\'About-Us\'FriendlyUrl=\'\'Description=\'\'Composite-Data-IChangeHistory\.ChangeDate=\'10/31/2013\\\ 23:43:00\'Composite-Data-IChangeHistory\.ChangedBy=\'admin\'Composite-Data-ProcessControlled-IPublishControlled\.PublicationStatus=\'draft\'Composite-Data-ProcessControlled-ILocalizedControlled\.CultureName=\'en-US\'Composite-Data-ProcessControlled-ILocalizedControlled\.SourceCultureName=\'en-US\''" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="UrlTitleIsRequired" />
+        </Key>
+        <Value>
+          <Value type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="true" />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="SelectablePageTypeIds" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;    &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="b8458925-5e4f-4aae-a5fa-3ad6530ad7bf" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Facebook Page" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="f7869eb2-7369-4eb2-af47-e3be261e92c7" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Page" />
+              </Value>
+            </KeyValuePair>
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="SelectableTemplateIds" />
+        </Key>
+        <Value>
+          <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;    &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="9f096519-d21c-435e-b334-62224fde2ab3" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[interior] 2 columns, content and aside" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="3c74a260-4156-4976-a219-786e7e404d94" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[interior] VMenu" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="f39dafee-ba69-4948-9034-75fee9366ddf" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[itme]9x3" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="fb6ddceb-627d-4c57-b349-1a05f2e96f32" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[itme]home" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="91f65371-7e5d-4d15-b076-d2909e968694" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[itme]OnePane" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="91f65371-7e5d-4d15-b076-d2909e968692" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[itme]project" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="8a473d3e-f9c6-4254-9d0f-27281e40f629" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="[itme]services" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="0526ad34-c540-418e-8c23-0eec2a8da2ce" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="1 column, full width" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="e3851f7a-3f4b-4eda-9708-07c3b6020e08" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="2 columns, navigation and content" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="ea2ca748-efbf-4d94-8e2a-11ce49b71cd5" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="3 columns" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="9f924e5a-03f5-4a90-b7b7-d3b70ec11ffc" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Facebook Page" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="a270f819-0b5c-4f7e-9194-4b554043e4ab" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Front page" />
+              </Value>
+            </KeyValuePair>
+            <KeyValuePair type="&lt;t n=&quot;System.Collections.Generic.KeyValuePair`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+              <Key>
+                <Value type="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="7d422b58-ce67-4a30-a2ed-61529eccd411" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Home" />
+              </Value>
+            </KeyValuePair>
+          </List>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="NamedXhtmlFragments" />
+        </Key>
+        <Value>
+          <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Content" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&#xA;&#x9;&lt;head&gt;&#xA;&#x9;&#x9;&lt;link href=&quot;~/Itme/stone/skin.css&quot; rel=&quot;stylesheet&quot; /&gt;&#xA;&#x9;&lt;/head&gt;&#xA;&#x9;&lt;body&gt;&#xA;&#x9;&#x9;&lt;div class=&quot;row-fluid&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;slider2&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;header_text2&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;img class=&quot;image-info&quot; src=&quot;/itme/images/info.png&quot; /&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;h2&gt;Thông tin công ty ITME&lt;/h2&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;clr&quot;&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;clr&quot;&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;div class=&quot;container960&quot;&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;introduction_shs&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;introduction_background&quot;&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;introduction_image&quot;&gt;&lt;img src=&quot;/itme/stone/images/staff.jpg&quot; /&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;introduction_text&quot;&gt;&lt;strong&gt;ITME&lt;/strong&gt; hoạt động trong lĩnh vực tin học và truyền thông, với chuyên môn cao trong lĩnh vực thuyết kế website và tư vấn ứng dụng phần mềm cho doanh nghiệp. &lt;br /&gt; &lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; Chúng tôi là một đội ngũ bao gồm nhiều chuyên viên lập trình trẻ được đào tạo chuyên nghiệp ở các học viện quốc tế về lập trình và đồ họa mỹ thuật tập hợp xây dựng sự lớn mạnh cho doanh nghiệp Việt ở &lt;strong&gt;ITME&lt;/strong&gt;. Cùng với đội ngũ chuyên nghiệp và nhiệt huyết, nhiều kinh nghiệm chúng tôi hy vọng sẽ mang đến giải pháp tối ưu trong việc quảng bá thương hiệu cho quý doanh nghiệp.&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;div class=&quot;clear&quot;&gt;&amp;#160;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;our_mission&quot;&gt;&amp;#160;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;p&gt;&lt;img src=&quot;/itme/stone/images/Our-Mission.gif&quot; /&gt;&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;our_mission_text&quot;&gt;Khách hàng kính mến, &#xA;&#x9;&#x9;&#x9;&#x9;&lt;strong&gt;&lt;br /&gt; &lt;br /&gt; ITME&lt;/strong&gt; được thành lập với lĩnh vực kinh doanh bao gồm : &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Tư vấn và thiết kế website. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Tư vấn về quản trị hệ thống máy tính và sản xuất phần mềm ứng dụng cho doanh nghiệp. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Hoạt động dịch vụ công nghệ thông tin và các dịch vụ khác liên quan tới máy vi tính. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Khắc phục sự cố và cài đặt phần mềm. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;strong&gt;ITME&lt;/strong&gt; tự hào mang đến cho bạn những giải pháp củng cố thương hiệu và quảng bá hình ảnh công ty bạn hiệu quả hơn : &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Thiết kế website chuyên nghiệp, với giao diện thân thiện và tính năng cần thiết cho việc kinh doanh của bạn. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Cung cấp các giải pháp tiên phong trong lĩnh vực thương mại điện tử và dịch vụ trực tuyến . &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Giúp cho việc kinh doanh của bạn thuận lợi hơn với các tính năng tác nghiệp trên web. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;img src=&quot;/itme/stone/images/cursor.gif&quot; /&gt; Chiến lược marketing, PR của bạn sẽ xuất hiện dưới dạng nội dung số giúp cho việc truyền bá nhanh chóng hơn và mang nhiều thông điệp hơn. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; Với thế mạnh trong việc thiết kế website chuyên nghiệp với nhiều tính năng nghiệp vụ đi kèm, stone head studio tự hào mang đến cho bạn những giải pháp củng cố thương hiệu hiệu quả. Studio chúng tôi sẽ ngày càng hoàn thiện xứng tầm một công ty thiết kế website điện tử hàng đầu. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; Chúng tôi tin rằng với những cam kết mạnh mẽ và toàn diện của mình sẽ làm bạn yên tâm hơn trong việc xây dựng thương hiệu doanh nghiệp ngày càng vững mạnh. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;p align=&quot;right&quot;&gt;&lt;strong&gt;Sale Manager&lt;/strong&gt;&lt;br /&gt; Huynh Huu Nhan&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;our_vision&quot;&gt;&lt;img src=&quot;/itme/stone/images/Our-vision.gif&quot; /&gt;&lt;/div&gt;&#xA;&#x9;&#x9;&#x9;&lt;p&gt;&amp;#160;&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;div class=&quot;our_vision_text&quot;&gt;Trong xu thế hội nhập và đón nhận làn sóng đầu tư mới từ các nước phát triển . Với mong muốn cống hiến những giá trị tốt nhất cho khách hàng, công ty chúng tôi đang ngày càng đào tạo đội ngũ nhân viên theo kịp tư duy và yêu cầu mới cho website doanh nghiệp; xứng tầm công ty hàng đầu về thiết kế website. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; Với xu thế tất yếu của thương mại điện tử trong những năm tới, những tiện ích mà người tiêu dùng có được bởi tiết kiệm chi phí và thời gian, không phải di chuyển nhiều, chúng tôi mong muốn trở thành 1 đơn vị cung cấp giải pháp phần mềm trực tuyến, có nhiều website shop mua bán trao đổi hàng hóa trực tuyến theo đúng nghĩa thương mại điện tử “ mua hàng và trả tiền qua mạng trực tuyến với máy tính kết nối internet”. &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt; &#xA;&#x9;&#x9;&#x9;&#x9;&lt;br /&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&lt;p align=&quot;right&quot;&gt;&lt;strong&gt;Technical Manager&lt;/strong&gt;&lt;br /&gt; Daniel Nguyen&lt;/p&gt;&#xA;&#x9;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA;&#x9;&lt;/body&gt;&#xA;&lt;/html&gt;" />
+              </Value>
+            </KeyPair>
+          </Dictionary>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="StateOptions" />
+        </Key>
+        <Value>
+          <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;">
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="draft" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Draft" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="awaitingApproval" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Awaiting Approval" />
+              </Value>
+            </KeyPair>
+            <KeyPair>
+              <Key>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="awaitingPublication" />
+              </Key>
+              <Value>
+                <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="Awaiting Publication" />
+              </Value>
+            </KeyPair>
+          </Dictionary>
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="PublishDate" />
+        </Key>
+        <Value>
+          <Null />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="UnpublishDate" />
+        </Key>
+        <Value>
+          <Null />
+        </Value>
+      </KeyPair>
+      <KeyPair>
+        <Key>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="OldPublicationStatus" />
+        </Key>
+        <Value>
+          <Value type="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" value="draft" />
+        </Value>
+      </KeyPair>
+    </Dictionary>
+  </Bindings>
+  <BindingsValidationRules>
+    <Dictionary type="&lt;t n=&quot;System.Collections.Generic.Dictionary`2, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;  &lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;    &lt;t n=&quot;Composite.Data.Validation.ClientValidationRules.ClientValidationRule,Composite&quot; /&gt;&#xD;&#xA;  &lt;/t&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </BindingsValidationRules>
+  <ExcludedEvents>
+    <List type="&lt;t n=&quot;System.Collections.Generic.List`1, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;&gt;&#xD;&#xA;  &lt;t n=&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot; /&gt;&#xD;&#xA;&lt;/t&gt;" />
+  </ExcludedEvents>
+</FormData>
