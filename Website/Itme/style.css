@@ -1,10 +1,10 @@
 ﻿@charset "utf-8";
-body { margin:0; padding:0; width:100%;}
+/*body { margin:0; padding:0; width:100%;}
 html { padding:0; margin:0;}
 
 /* main */
-.main {width:100%; padding:0; margin:0 auto; }
-.resize { width:985px; margin:0 auto;}
+/*.main {width:100%; padding:0; margin:0 auto; }
+.resize { width:985px; margin:0 auto;}*/
 
 /********** header **********/
 .header { background:url(images/header_bg.gif) top repeat-x; padding:0; margin:0 auto; }
@@ -53,7 +53,8 @@ html { padding:0; margin:0;}
 .top_sup_resize .blogga { width:230px; float:left; margin:0 2px; padding:2px; border-right:1px solid #d6d6d6;}
 .top_sup_resize .blogga2 { width:230px; float:left; margin:0 2px; padding:2px;}
 /********** block index **********/
-.body { background: #fff; border-top:1px solid #e1e1e1;  }
+ 
+/*.body { background: #fff; border-top:1px solid #e1e1e1;  }
 .body_resize { width:960px; margin:0 auto; padding:0;}
 .body h2 { font:normal 18px Arial, Helvetica, sans-serif; color:#2a2a2a; padding:15px 5px; margin:0;}
 .body p { font:normal 12px Arial, Helvetica, sans-serif; color:#5f5f5f; padding:10px 5px; margin:0; line-height:1.8em;}
@@ -64,19 +65,9 @@ html { padding:0; margin:0;}
 .body img.floated { float:right; margin:5px 10px; padding:0;}
 .left { width:589px; float:left; margin:0; padding:0 20px; border-right:1px solid #f2f2f2;}
 .left .serv { width:265px; float:left; margin:0; padding:5px 10px;}
-.right  { width:290px; float:right; margin:0; padding:0 20px;}
+.right  { width:290px; float:right; margin:0; padding:0 20px;}*/
 /********** contact form **********/
-#contactform { margin:0; padding:5px 10px;}
-#contactform * { color:#F00;}
-#contactform ol { margin:0; padding:0; list-style:none;}
-#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
-#contactform li.buttons { margin:5px 0 5px 0;}
-#contactform label { margin:0; width:110px; display:block; padding:10px 0; color:#5f5f5f; font: normal 12px Arial, Helvetica, sans-serif; text-transform:capitalize; float:left;}
-#contactform label span { color:#F00;}
-#contactform input.text { width:440px; border:1px solid #e7e7e7; margin:10px 0; padding:5px 2px; height:16px; background:#f8f8f8; float:left;}
-#contactform textarea { width:440px; border:1px solid #e7e7e7; margin:10px 0; padding:2px; background:#f8f8f8; float:left;}
-#contactform li.buttons input { padding:3px 0 3px 110px; margin:0; border:0; color:#FFF; float:left;}
-p.response { text-align:center; color:#F00; font: normal 11px  Georgia, "Times New Roman", Times, serif; line-height:1.8em; width:auto;}
+ 
 /*************footer**********/
 .footer { padding:0; margin:0 auto; background:#2077c4 url(images/footer_bg.gif) top repeat-x;}
 .footer_resize {width:960px; margin:0 auto; padding:30px 0 10px 0;}
