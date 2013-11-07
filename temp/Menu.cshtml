@@ -1,0 +1,406 @@
+﻿@model MenuModel
+@using Nop.Web.Models.Common;
+@using Nop.Web.Models.Catalog;
+
+
+
+@*<ul class="top-menu">
+    @Html.Widget("header_menu_before")
+    <li><a href="@Url.RouteUrl("HomePage")">@T("HomePage")</a></li>
+    @if (Model.RecentlyAddedProductsEnabled)
+    {
+        <li><a href="@Url.RouteUrl("RecentlyAddedProducts")">@T("Products.NewProducts")</a>
+        </li>
+    }
+    <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>
+    <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
+    @if (Model.BlogEnabled)
+    {
+        <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
+    }
+    @if (Model.ForumEnabled)
+    {
+        <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
+    }
+    <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+    @Html.Widget("header_menu_after")
+</ul>*@
+@helper RenderCategoryLine(CategoryNavigationModel.CategoryModel category)
+{
+    
+    <li class="@(category.Id == ViewBag.CurrentCategoryId ? "active" : "inactive")">
+
+        <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name
+            @if (category.NumberOfProducts.HasValue)
+            {
+                <text> (@(category.NumberOfProducts.Value))</text>
+            }
+        </a>
+        @{
+            if (category.Id == ViewBag.CurrentCategoryId ||
+                category.SubCategories.Count() > 0)
+            {
+                if (category.SubCategories.Count > 0)
+                {
+            <ul>
+                @foreach (var subCategory in category.SubCategories)
+                {
+                    @RenderCategoryLine(subCategory)
+                }
+            </ul>
+                }
+            }
+        }
+    </li>
+}
+
+@{
+    var Cate = new CategoryNavigationModel();
+    Cate = ViewBag.Cate;
+}
+
+
+<style>
+    /********** Menu **********/
+    #menu > span, .m-menu {
+        display: none;
+    }
+
+    #menu {
+        background: #222;
+        margin: 15px 0px;
+        height: 40px;
+        padding: 0px 0px 0px 3px;
+    }
+
+        #menu > ul > li.home {
+            margin: 0 0 0 0px;
+        }
+
+            #menu > ul > li.home a {
+                display: block;
+                height: 35px!important;
+                line-height: 35px!important;
+                padding: 5px 5px 0 5px!important;
+            }
+
+                #menu > ul > li.home a span {
+                    background: url(/content/images/home-icon.png) center center no-repeat;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    text-indent: -9999px;
+                }
+
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0 2px;
+        }
+
+        #menu > ul > li {
+            position: relative;
+            float: left;
+            z-index: 1010;
+            padding: 0px;
+        }
+
+            #menu > ul > li > a {
+                font-size: 12px;
+                color: #fff;
+                line-height: 40px;
+                text-decoration: none;
+                display: block;
+                padding: 0px 10px 0px 10px;
+                z-index: 1009;
+                position: relative;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            #menu > ul > li:hover > a {
+                color: #fff;
+                background: #d45c93;
+            }
+
+            #menu > ul > li > div {
+                display: none;
+                background: #fff;
+                position: absolute;
+                z-index: 1008;
+                padding: 10px;
+                border-top: 2px solid #d45c93;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            #menu > ul > li:hover > div.custom_block {
+                display: table;
+            }
+
+                #menu > ul > li:hover > div.custom_block ul {
+                    display: table-cell;
+                }
+
+            #menu > ul > li:hover > div {
+                display: table;
+            }
+
+            #menu > ul > li > div > ul {
+                display: table-cell;
+            }
+
+            #menu > ul > li.categories_hor > div {
+                display: none;
+                background: #fff;
+                min-width: 895px;
+                position: absolute;
+                z-index: 1008;
+                padding: 10px 10px 0px 10px;
+                border-top: 2px solid #d45c93;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            #menu > ul > li:hover > div {
+                display: block;
+            }
+
+            #menu > ul > li.categories_hor > div > .column {
+                position: relative;
+                display: inline-block;
+                width: 160px;
+                margin: 0 15px 15px 0px;
+            }
+
+            #menu > ul > li > div > ul {
+                position: relative;
+                width: 160px;
+            }
+
+                #menu > ul > li.categories_hor > div > .column + .column, #menu > ul > li > div > ul li + li {
+                }
+
+            #menu > ul > li.categories_hor > div > .column > a {
+                font-weight: bold;
+                font-size: 13px;
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 5px;
+            }
+
+            #menu > ul > li.categories_hor > div > .column a, #menu > ul > li > div > ul li a {
+                padding: 4px 0;
+                display: block;
+            }
+
+            #menu > ul > li > div > ul li a {
+                font-size: 12px;
+            }
+
+            #menu > ul > li.categories_hor > div > .column:hover > a {
+                color: #d45c93;
+            }
+
+            #menu > ul > li.categories_hor > div > .column > div {
+                display: block;
+            }
+
+            #menu > ul > li.categories_hor > div > .column:hover div {
+                display: table;
+            }
+
+            #menu > ul > li.categories_hor > div > .column > div ul {
+                display: table;
+                padding: 0;
+            }
+
+                #menu > ul > li.categories_hor > div > .column > div ul li + li {
+                }
+
+            #menu > ul > li ul + ul {
+                padding-left: 20px;
+            }
+
+            #menu > ul > li ul > li > a {
+                text-decoration: none;
+                padding: 4px;
+                display: block;
+                min-width: 150px;
+            }
+
+            #menu > ul > li div > ul > li > a {
+                color: #222;
+            }
+
+                #menu > ul > li div > ul > li > a:hover {
+                    background: url(../image/bullet-1.png) right center no-repeat;
+                    color: #d45c93;
+                }
+
+            #menu > ul > li.categories > div {
+                display: none;
+                background: #fff;
+                min-width: 160px;
+                position: absolute;
+                z-index: 1008;
+                padding: 10px;
+                border-top: 2px solid #d45c93;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            #menu > ul > li:hover > div {
+                display: block;
+            }
+
+            #menu > ul > li.categories > div > .column, #menu > ul > li > div > ul {
+                position: relative;
+            }
+
+                #menu > ul > li.categories > div > .column + .column, #menu > ul > li > div > ul li + li {
+                    border-top: 1px solid #eee;
+                }
+
+                #menu > ul > li.categories > div > .column a, #menu > ul > li > div > ul li a {
+                    font-size: 13px;
+                    padding: 7px 0;
+                    display: block;
+                }
+
+                #menu > ul > li.categories > div > .column:hover > a {
+                    color: #d45c93;
+                }
+
+                #menu > ul > li.categories > div > .column > div {
+                    display: none;
+                    position: absolute;
+                    border-top: 2px solid #d45c93;
+                    background: #fff;
+                    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                    z-index: 1010;
+                    left: 150px;
+                    top: 0;
+                    padding: 5px 10px;
+                }
+
+                #menu > ul > li.categories > div > .column:hover div {
+                    display: table;
+                }
+
+                #menu > ul > li.categories > div > .column:hover > div ul {
+                    display: table-cell;
+                }
+
+                    #menu > ul > li.categories > div > .column:hover > div ul li + li {
+                        border-top: 1px solid #eee;
+                    }
+</style>
+<nav id="menu">
+    <ul>
+        @Html.Widget("header_menu_before")
+        <li class="home"><a title="Home" href="@Url.RouteUrl("HomePage")"><span>@T("HomePage")</span></a></li>
+        <li class="categories_hor"><a>Categories</a>
+            <div>
+
+
+                @if (Cate.Categories.Count > 0)
+                {
+
+                    foreach (var category in Cate.Categories)
+                    {
+                                   
+                    <div class="column">
+                        <a href="@Url.RouteUrl("Category", new { SeName = category.SeName })">@category.Name</a>
+                        <div>
+                            <ul>
+                                @if (category.SubCategories.Count > 0)
+                                {
+                                    foreach (var subCategory in category.SubCategories)
+                                    {
+                                    <li><a href="@Url.RouteUrl("Category", new { SeName = subCategory.SeName })">@subCategory.Name
+                                        @if (category.NumberOfProducts.HasValue)
+                                        {
+                                            <text> (@(subCategory.NumberOfProducts.Value))</text>
+                                        }
+
+                                    </a></li>          
+                                    }
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                                    
+                    }
+
+                }
+
+            </div>
+        </li>
+        <li><a target="_blank" href="#">Headers</a>
+            <div>
+                <ul>
+                    <li><a href="index-2.html">Header Style 1</a></li>
+                    <li><a href="header-footer-2.html">Header Style 2</a></li>
+                    <li><a href="header-footer-3.html">Header Style 3</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a target="_blank" href="#">Menus</a>
+            <div>
+                <ul>
+                    <li><a href="index-2.html">Horizontal Categories</a></li>
+                    <li><a href="header-footer-2.html">Vertical Categories</a></li>
+                    <li><a href="header-footer-3.html">Simple Categories</a></li>
+                </ul>
+            </div>
+        </li> 
+        <li><a href="#">Custom Block</a>
+            <div class="custom_block">
+                <ul>
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0" style="width: 500px;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3>You can insert any content here.</h3>
+                                        <p>&nbsp;</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>
+                                        <img alt="responsive" src="image/product/responsive.jpg" style="width: 250px; height: 150px; border-width: 0px; border-style: solid; float: left; margin-left: 10px; margin-right: 10px;" />Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </li>
+       
+        <li><a>Information</a>
+            <div>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html">Delivery Information</a></li>
+                    <li><a href="about-us.html">Privacy Policy</a></li>
+                    <li><a href="elements.html">Elements</a></li>
+                </ul>
+            </div>
+        </li>
+        @if (Model.RecentlyAddedProductsEnabled)
+        {
+            <li><a href="@Url.RouteUrl("RecentlyAddedProducts")">@T("Products.NewProducts")</a>
+            </li>
+        }
+        <li><a href="@Url.RouteUrl("ProductSearch")">@T("Search")</a> </li>
+        <li><a href="@Url.RouteUrl("CustomerInfo")">@T("Account.MyAccount")</a></li>
+        @if (Model.BlogEnabled)
+        {
+            <li><a href="@Url.RouteUrl("Blog")">@T("Blog")</a></li>
+        }
+        @if (Model.ForumEnabled)
+        {
+            <li><a href="@Url.RouteUrl("Boards")">@T("Forum.Forums")</a></li>
+        }
+        <li><a href="@Url.RouteUrl("ContactUs")">@T("ContactUs")</a></li>
+        @Html.Widget("header_menu_after")
+    </ul>
+</nav>
