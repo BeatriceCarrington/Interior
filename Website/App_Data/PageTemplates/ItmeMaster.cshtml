@@ -9,7 +9,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <title>Công ty ITME - @CurrentPageNode.Title</title>
     @if (!string.IsNullOrEmpty(CurrentPageNode.Description))
     {
@@ -28,108 +29,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="@Href(bootstrap)/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="@Href(jsFolder)/holder.js"></script>
-    <script type="text/javascript" src="@Href(jsFolder)/easySlider1.5.js"></script>
+   
     <link rel="stylesheet" type="text/css" href="@Href(stylesFolder)/style.css" />
     <link rel="stylesheet" type="text/css" href="@Href(stylesFolder)/fixcss.css" />
 
-    <script type="text/javascript">
 
-        $(document).ready(function () {
-            $("#slider").easySlider({
-                controlsBefore: '<p id="controls">',
-                controlsAfter: '</p>',
-                auto: true, speed: 3000,
-                continuous: true
-            });
-        });
-    </script>
-    <style type="text/css">
-        .gallery
-        {
-            width: 890px;
-            height: 350px;
-            margin: 0 auto;
-        }
-
-        #slider
-        {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-            #slider ul,
-            #slider li
-            {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-            }
-            /* 
-    define width and height of list item (slide)
-    entire slider area will adjust according to the parameters provided here
-*/
-            #slider li
-            {
-                width: 890px;
-                height: 350px;
-                overflow: hidden;
-            }
-
-        p#controls
-        {
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-
-        #prevBtn
-        {
-            display: block;
-            margin: 0;
-            overflow: hidden;
-            width: 35px;
-            height: 75px;
-            position: absolute;
-            left: -55px;
-            top: -210px;
-        }
-
-        #nextBtn
-        {
-            display: block;
-            margin: 0;
-            overflow: hidden;
-            width: 35px;
-            height: 75px;
-            position: absolute;
-            left: 910px;
-            top: -210px;
-        }
-
-        #prevBtn a
-        {
-            display: block;
-            width: 35px;
-            height: 75px;
-            background: url(/itme/images/l_arrow.gif) no-repeat 0 0;
-        }
-
-        #nextBtn a
-        {
-            display: block;
-            width: 35px;
-            height: 75px;
-            background: url(/itme/images/r_arrow.gif) no-repeat 0 0;
-        }
-
-        .container2
-        {
-            width: 960px;
-            margin: 0px auto;
-        }
-      
-    </style>
 </head>
 @{
     string bg = "/itme/images/bg2.jpg";
@@ -153,7 +57,7 @@
                         <div style="float:right;margin-top:7px;">
                         <f:function name="Composite.Navigation.LanguageSwitcher" xmlns:f="http://www.composite.net/ns/function/1.0">
 				<f:param name="Mode" value="HomePages" />
-				<f:param name="ShowCurrent" value="False" />
+				<f:param name="ShowCurrent" value="True" />
 				<f:param name="Format" value="Image" />
 				<f:param name="IncludeQuery" value="True" />
 			</f:function></div>
