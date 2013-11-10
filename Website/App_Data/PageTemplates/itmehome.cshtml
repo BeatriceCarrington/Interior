@@ -21,7 +21,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     @*you can add template specific head elements here*@
-        
+
     <script src="/Itme/js/easySlider1.7.js"></script>
     <script type="text/javascript">
 
@@ -37,41 +37,52 @@
     <style type="text/css">
         .gallery
         {
-            position:relative;
+            position: relative;
         }
-        /* numeric controls */	
+        /* numeric controls */
 
-	ol#controls{
-	  height: 28px;
-    margin: 1em 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 300px;
-		}
-	ol#controls li{
-		margin:0 10px 0 0; 
-		padding:0;
-		float:left;
-		list-style:none;
-		height:28px;
-		line-height:28px;
-		}
-	ol#controls li a{
-		float:left;
-		height:28px;
-		line-height:28px;
-		border:1px solid #ccc;
-		background:#006DCC;
-		color:#fff;
-		padding:0 10px;
-		text-decoration:none;
-		}
-	ol#controls li.current a{
-		background:#ccc;
-		color:#555;
-		}
-	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+        ol#controls
+        {
+            height: 28px;
+            margin: 1em 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 300px;
+        }
+
+            ol#controls li
+            {
+                margin: 0 10px 0 0;
+                padding: 0;
+                float: left;
+                list-style: none;
+                height: 28px;
+                line-height: 28px;
+            }
+
+                ol#controls li a
+                {
+                    float: left;
+                    height: 28px;
+                    line-height: 28px;
+                    border: 1px solid #ccc;
+                    background: #006DCC;
+                    color: #fff;
+                    padding: 0 10px;
+                    text-decoration: none;
+                }
+
+                ol#controls li.current a
+                {
+                    background: #ccc;
+                    color: #555;
+                }
+
+                ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus
+                {
+                    outline: none;
+                }
 
         .gallery
         {
@@ -157,12 +168,19 @@
             width: 960px;
             margin: 0px auto;
         }
+
         #LanguageSwitcher li
-        {float:left;
+        {
+            float: left;
         }
     </style>
+
+
+    
+    <script src="/Itme/js/fb.js"></script>
 </head>
 <body>
+    <div id="fb-root"></div>
     <div class="row-fluid">
 
         @Markup(Top)
@@ -184,15 +202,13 @@
                 <div>
 
                     <div class="heading1">Tin tức &amp; sự kiện</div>
-                  <f:function name="My.Content.NewsTop" xmlns:f="http://www.composite.net/ns/function/1.0">
+                    <f:function name="My.Content.NewsTop" xmlns:f="http://www.composite.net/ns/function/1.0">
 			<f:param name="NewsDetailPage" value="1cb4fc4c-94bc-4f63-8ddb-4f5f0ab73567" />
 		</f:function>
 
                 </div>
                 <div>
-                    <f:function name="Composite.Community.Facebook.LikeBox" xmlns:f="http://www.composite.net/ns/function/1.0">
-					<f:param name="URL" value="https://www.facebook.com/itsthehappypage" />
-				</f:function>
+                   <div class="fb-like-box" data-href="http://www.facebook.com/itsthehappypage" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
                 </div>
             </div>
         </div>
