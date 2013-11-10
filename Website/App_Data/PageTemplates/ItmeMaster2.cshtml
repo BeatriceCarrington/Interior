@@ -1,0 +1,115 @@
+﻿@inherits CompositeC1WebPage
+
+@{
+    string stylesFolder = "~/Itme";
+    string jsFolder = "~/Itme/js";
+    string bootstrap = "~/Itme/bootstrap";
+    string websiteTitle = HomePageNode.Title;    
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="@Lang">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Công ty ITME - @CurrentPageNode.Title</title>
+    @if (!string.IsNullOrEmpty(CurrentPageNode.Description))
+    {
+        <meta name="description" content="@CurrentPageNode.Description" />
+    }
+@*@PageTemplateFeature("Descriptive HTML head elements")*@
+
+    <link rel="stylesheet" type="text/css" href="@Href(bootstrap)/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="@Href(bootstrap)/css/bootstrap-responsive.css" />
+
+    <!--To ensure devices display responsive pages properly, include the viewport meta tag.-->
+
+    @* SCRIPTS *@
+    <script id="modernizr-js" type="text/javascript" src="@Href(jsFolder)/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    <script id="jquery-js" src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="@Href(bootstrap)/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="@Href(jsFolder)/holder.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="@Href(stylesFolder)/style.css" />
+    <link rel="stylesheet" type="text/css" href="@Href(stylesFolder)/fixcss.css" />
+
+ 
+</head>
+@{
+    string bg = "/itme/images/bg2.jpg";
+    if (CurrentPageNode.Id == new Guid("86b743f5-8dd1-4eea-97f7-4e98423da026"))
+    {
+        bg = "/itme/images/bg.jpg";
+    }
+}
+<body>
+    <div id="fb-root"></div>
+    <div class="main">
+        <div class="container-fluid">
+
+            <div class="row-fluid">
+                <div class="header">
+                    <div class="block_header">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="/itme/images/logo_itme.png" border="0" alt="logo" /></a>
+                        </div>
+                        <div style="float: right; margin-top: 7px;">
+                            <f:function name="Composite.Navigation.LanguageSwitcher" xmlns:f="http://www.composite.net/ns/function/1.0">
+				<f:param name="Mode" value="HomePages" />
+				<f:param name="ShowCurrent" value="True" />
+				<f:param name="Format" value="Image" />
+				<f:param name="IncludeQuery" value="True" />
+			</f:function>
+                        </div>
+                        <div class="search">
+                            <form id="SearchForm" name="form1" method="get" action="/SearchResult">
+                                <label>
+                                    <span>
+                                        <input name="SearchQuery" maxlength="1000" type="text" class="keywords" id="textfield"
+                                            placeholder="Tìm kiếm..."
+                                            value="" />
+                                    </span>
+                                    <input name="b" type="image" src="/itme/images/search.gif" class="button" />
+                                </label>
+                            </form>
+
+                        </div>
+                        <f:function xmlns:f="http://www.composite.net/ns/function/1.0" name="Rain.Menu" />
+
+
+                    </div>
+                </div>
+            </div>
+            @RenderBody()
+            <div class="row-fluid">
+                <div class="footer">
+
+                    <div class="footer_resize">
+                        <div>
+                            <f:function name="Composite.Navigation.LevelSitemap" xmlns:f="http://www.composite.net/ns/function/1.0">
+			<f:param name="Level" value="1" />
+		</f:function>
+                        </div>
+                        <div class="clr"></div>
+                        <div>
+                            <p class="leftt">
+                                Copyright © ITME.com. All Rights Reserved<br />
+                            </p>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+</html>

@@ -238,4 +238,34 @@
    at Composite.Core.Parallelization.ParallelFacade.ThreadWrapper`1.WrapperAction(TSource source)
    at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
    at System.Threading.Tasks.Task.InnerInvoke()
-   at System.Thr
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+
+20131110 07:51:43.0511 2 40 Error FunctionWrapper | INNER  System.InvalidOperationException: Failed to execute function with local name 'LoadUrl' 
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.RenderHelper.<>c__DisplayClassa.<BuildInputDocument2>b__3(Int32 i)
+   at Composite.Core.Parallelization.ParallelFacade.ThreadWrapper`1.WrapperAction(TSource source)
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+20131110 07:51:43.0521 2 40 Error FunctionWrapper | INNER | INNER  System.InvalidOperationException: Failed to get value for function 'Composite.Xml.LoadUrl' 
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.RenderHelper.GetFunctionCallResult(FunctionContextContainer functionContextContainer, NamedFunctionCall namedFunctionCall, Boolean addDetailedComments)
+   at Composite.Plugins.Functions.FunctionProviders.XsltBasedFunctionProvider.RenderHelper.<>c__DisplayClassa.<BuildInputDocument2>b__3(Int32 i)
+20131110 07:51:43.0531 2 40 Error FunctionWrapper | INNER | INNER | INNER  System.Net.WebException: The remote name could not be resolved: 'www.facebook.com'
+   at System.Net.HttpWebRequest.GetResponse()
+   at Composite.Core.Xml.UriResolver.GetStream(String inputUri)
+   at Composite.Core.Xml.XElementUtils.Load(String inputUri)
+   at Composite.Plugins.Functions.FunctionProviders.StandardFunctionProvider.Xml.LoadUrlFunction.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.Foundation.PluginFacades.FunctionWrapper.Execute(ParameterList parameters, FunctionContextContainer context)
+   at Composite.Functions.FunctionRuntimeTreeNode.GetValue(FunctionContextContainer contextContainer)
+20131110 11:42:41.7158 2 20 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 2 ended at 11:42:41:71 in process 10652
+20131110 11:42:54.1095 3 42 Critical WorkflowFacade  Could not deserialize form data for the workflow 0b05d4e7-353b-465f-af32-e31e07c21084
+20131110 11:42:54.1765 3 42 Critical WorkflowFacade  Could not deserialize form data for the workflow 44cad023-9b6b-4adc-985a-2908190705a6
+20131110 11:42:54.2385 3 42 Critical WorkflowFacade  Could not deserialize form data for the workflow f6e0d50f-f7a8-4896-85c2-f500ef0b6fff
+20131110 11:43:44.0934 3 48 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 3 ended at 11:43:44:09 in process 10652
+20131110 12:38:04.3058 4 42 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 4 ended at 12:38:04:30 in process 10652
+20131110 12:38:14.0174 6 25 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 6 ended at 12:38:14:01 in process 10652
+20131110 12:38:19.8557 7 14 Warning ConsoleMessageServiceFacade  Console 'key9526233852375299' has a last known change numer of 178, but server current number is 1.
+20131110 12:39:32.8129 7 26 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 7 ended at 12:39:32:81 in process 10652
+20131110 12:39:49.9809 8 40 Information ApplicationEventHandler RGB(205, 92, 92) AppDomain 8 ended at 12:39:49:97 in process 10652
