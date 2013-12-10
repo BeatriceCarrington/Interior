@@ -1,4 +1,2 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LockingInformationElementsElements>
-  <LockingInformationElements Id="d5a27d75-05a7-42f2-9862-cd57f4873ace" SerializedEntityToken="entityTokenType='Composite\.Data\.DataEntityToken,Composite'entityToken='_dataId_=\'Id=\\\'b56679d4-39bc-4eef-bb80-78680de04914\\\'\'_dataIdType_=\'CompositeGenerated\\\.DynamicXmlDataProvider\\\.Composite_Data_Types_IPageDataId\'_interfaceType_=\'Composite\\\.Data\\\.Types\\\.IPage,Composite\'_dataScope_=\'administrated\'_localeScope_=\'en-US\''" SerializedOwnerId="AAEAAAD/////AQAAAAAAAAAEAQAAAAtTeXN0ZW0uR3VpZAsAAAACX2ECX2ICX2MCX2QCX2UCX2YCX2cCX2gCX2kCX2oCX2sAAAAAAAAAAAAAAAgHBwICAgICAgICX6avu12NvESxYvanxtsTxws=" Username="admin" />
-</LockingInformationElementsElements>
+<LockingInformationElementsElements />

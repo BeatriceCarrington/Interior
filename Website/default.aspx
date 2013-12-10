@@ -12,7 +12,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Under Construction</title>
-    <script runat="server">
+   <script runat="server">
         void Page_Init(object sender, EventArgs e)
         {
             if (SystemSetupFacade.IsSystemFirstTimeInitialized == false)
@@ -79,24 +79,27 @@
             ApplicationInstance.CompleteRequest();
         }
     </script>
-    <style type="text/css">
-        body
-        {
-            background-color: white;
-            color: black;
-            font-family: Verdana, sans-serif;
-            font-size: 12px;
-            padding: 20px;
-        }
-        p
-        {
-            margin: 0 0 20px 0;
-        }
-    </style>
+
+    <link href="Itme/style2.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="/itme/js/jquery.backstretch.min.js"></script>
+   <style>
+       body
+       {
+           background-color:#000;
+       }
+   </style>
 </head>
 <body>
-    <p>
-        Site under construction - <a href="Composite">start here</a>.
-    </p>
+    <div id="wrapper">
+    <div id="content">
+		<div id="img-sec">
+			<img class="gear1" src="/itme/images/gear.png" width="220"/>
+			<img class="gear2" src="/itme/images/gear.png" width="100"/>
+			<img class="gear3" src="/itme/images/gear.png" width="170"/>
+		</div>
+      <p><span>ITME.VN</span> is comming soon !</p>
+    </div>
+  </div>
 </body>
 </html>
